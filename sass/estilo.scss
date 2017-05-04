@@ -1,0 +1,49 @@
+@import "var-func.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+body {
+	font-size: 10px;
+	font-family: Roboto;
+	backgroud: #272935;
+}
+
+.sidebar {
+	margin-top: 10vh;
+	margin-left: 15vh;
+	border-right: 1px solid transparent;
+	-moz-border-image: -moz-linear-gradient(bottom, #aaa 0%, #555 80%);
+	-webkit-border-image: -webkit-linear-gradient(bottom, #aaa 0%, #aaa 80%);
+	border-image: linear-gradient(to top, #ddd 0%, #777 20%, #555 100%);
+	border-image-slice: 1;
+	padding-right: -20%;
+	height: 80vh;
+	.titulo {
+		font-size: $var-2*3.5;
+		font-weight: 300;
+		letter-spacing: -1.5px;
+		color: $cor-1;
+	}
+	.prof {
+		font-size: $var-2*2;
+		font-weight: 400;
+		color: $cor-2;
+		margin-bottom: 10px;
+	}
+	.menu {
+		li {
+			font-size: $var-2*2;
+			font-weight: 300;
+			letter-spacing: -0.75px;
+			color: #666;
+		}
+					.active {
+				border-bottom: 1px solid #eee;
+			}
+		a {
+			color: #666;
+
+		}
+		a:hover {
+				color: #000;
+		}
+	}
+}
