@@ -7,15 +7,16 @@ body {
 }
 
 .sidebar {
+	
 	margin-top: 10vh;
 	margin-left: 15vh;
 	border-right: 1px solid transparent;
 	-moz-border-image: -moz-linear-gradient(bottom, #aaa 0%, #555 80%);
 	-webkit-border-image: -webkit-linear-gradient(bottom, #aaa 0%, #aaa 80%);
-	border-image: linear-gradient(to top, #ddd 0%, #777 20%, #555 100%);
+	border-image: linear-gradient(to top, #ddd 0%, #555 100%);
 	border-image-slice: 1;
 	padding-right: -20%;
-	height: 80vh;
+	height: 60vh;
 	.titulo {
 		font-size: $var-2*3.5;
 		font-weight: 300;
@@ -35,15 +36,16 @@ body {
 			letter-spacing: -0.75px;
 			color: #666;
 		}
-					.active {
-				border-bottom: 1px solid #eee;
-			}
+		.active {
+			border-bottom: 1px solid #eee;
+		}
 		a {
 			color: #666;
-
+			transition: all .3s ease-in-out;
 		}
 		a:hover {
-				color: #000;
+			color: #b584ca;
 		}
+		
 	}
 }
