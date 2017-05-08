@@ -1,49 +1,49 @@
 @import "var-func.scss";
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Quicksand');
 body {
 	font-size: 10px;
-	font-family: Roboto;
+	font-family: 'Lato';
 	backgroud: #272935;
 }
 
 .sidebar {
-	margin-top: 10vh;
+	margin-top: 15vh;
 	margin-left: 15vh;
-	border-right: 1px solid transparent;
-	-moz-border-image: -moz-linear-gradient(bottom, #aaa 0%, #555 80%);
-	-webkit-border-image: -webkit-linear-gradient(bottom, #aaa 0%, #aaa 80%);
-	border-image: linear-gradient(to top, #ddd 0%, #555 100%);
-	border-image-slice: 1;
+	padding-top: 0px!important;
+	border-right: 1px solid #ddd;
 	padding-right: -20%;
-	height: 60vh;
-	.titulo {
-		font-size: $var-2*3.5;
+	height: 50vh;
+	font-family: 'Quicksand';
+	.autor {
+		font-size: $var-1*2.2;
+		letter-spacing: -1.5pt;
 		font-weight: 300;
-		letter-spacing: -1.5px;
 		color: $cor-1;
+		margin-bottom: -10px;
 	}
-	.prof {
-		font-size: $var-2*2;
-		font-weight: 400;
-		color: $cor-2;
+	.autor__profissao {
+		font-size: $var-1*1.5;
+		font-weight: 300;
+		color: $cor-1;
 		margin-bottom: 10px;
 	}
 	.menu {
 		li {
-			font-size: $var-2*2;
+			font-size: $var-2*2.3;
 			font-weight: 300;
 			letter-spacing: -0.75px;
-			color: #666;
+			color: $cor-2;
 		}
 		.active {
+			color: $cor-2;
 			border-bottom: 1px solid #eee;
 		}
 		a {
-			color: #666;
-			transition: all .3s ease-in-out;
+			color: $cor-1;
+			transition: all .5s ease-in-out;
 		}
 		a:hover {
-			color: #b584ca;
+			color: $cor-3;
 		}
 	}
 }
