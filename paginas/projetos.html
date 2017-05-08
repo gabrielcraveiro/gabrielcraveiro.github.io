@@ -2,77 +2,132 @@
 <html lang="en,pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gabriel Craveiro - Web Dev</title>
-    <link rel="stylesheet" href="../css/estilo.css" type="text/css">
-    <link rel="stylesheet" type="" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gabriel Craveiro - Web Dev</title>
+  <link rel="stylesheet" href="../css/estilo.css" type="text/css">
+  <link rel="stylesheet" type="" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
 
 
 
 </head>
 
 <body>
-    <div class="columns">
-        <div class="column is-3 has-text-left sidebar">
-            <h2 class="autor">Gabriel Craveiro</h1>
-                <p class="autor__profissao">Web Developer from Santos</p>
-                <ul class="menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="" class="active">Projetos</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a target="_blank" href="https://github.com/gabrielcraveiro/">Github</a></li>
-                    <li><a target="_blank" href="">Blog</a></li>
-                    <li><a href="" target="_blank">Contato</a></li>
-                </ul>
-        </div>
-        <section class="column projetos">
-            <h1>Projetos</h1>
-            <button class="btn btn--logo">Logo</button>
-            <button class="btn">Web Design</button>
-            <button class="btn">.JS</button>
-            <div class="projetos__thumb">
-                <div class="projetos--coala logo">
-                    <img src="..\img\thumbnails\coalaDocesThum.png" alt="">
-                    <div class="projetos__conteudo">
-                        <h2>Coala Doces</h2>
-                        <p>HTML - CSS - Bootstrap - Sass - JS - Adobe Suit</p>
-                        <p>
-                            Conceito de doceria onde haveria a utilização
-                            <br>de cores e um mascote que criassem um laço
-                            <br>com o cliente. Realizei a criação do logo e cartão
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <div class="columns">
+    <div class="column is-3 has-text-left sidebar">
+      <h2 class="autor">Gabriel Craveiro</h1>
+        <p class="autor__profissao">Web Developer from Santos</p>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="" class="active">Projetos</a></li>
+          <li><a href="">Resume</a></li>
+          <li><a target="_blank" href="https://github.com/gabrielcraveiro/">Github</a></li>
+          <li><a target="_blank" href="">Blog</a></li>
+          <li><a href="" target="_blank">Contato</a></li>
+        </ul>
     </div>
+    <section class="column projetos">
+      <h1>Projetos</h1>
+      <button class="btn btn--logo">Logo</button>
+      <button class="btn btn--web">Web Design</button>
+      <button class="btn">.JS</button>
+      <div class="projetos__thumb">
+        <div class="projetos--coala logo">
+          <img src="..\img\thumbnails\coalaDocesThum.png" alt="">
+          <div class="projetos__conteudo">
+            <h2><a href="" class="projetos--link">Coala Doces</a></h2>
+            <p>HTML - CSS - Bootstrap - Sass - JS - Adobe Suit</p>
+            <p>
+              Conceito de doceria onde haveria a utilização
+              <br>de cores e um mascote que criassem um laço
+              <br>com o cliente. Realizei a criação do logo e cartão
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="projetos__thumb">
+        <div class="projetos--coala web">
+          <img src="..\img\thumbnails\coalaDocesThum.png" alt="">
+          <div class="projetos__conteudo">
+            <h2><a href="" class="projetos--link">Coala Doces</a></h2>
+            <p>HTML - CSS - Bootstrap - Sass - JS - Adobe Suit</p>
+            <p>
+              Conceito de doceria onde haveria a utilização
+              <br>de cores e um mascote que criassem um laço
+              <br>com o cliente. Realizei a criação do logo e cartão
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="projetos__thumb">
+        <div class="projetos--coala logo">
+          <img src="..\img\thumbnails\coalaDocesThum.png" alt="">
+          <div class="projetos__conteudo">
+            <h2><a href="" class="projetos--link">Coala Doces</a></h2>
+            <p>HTML - CSS - Bootstrap - Sass - JS - Adobe Suit</p>
+            <p>
+              Conceito de doceria onde haveria a utilização
+              <br>de cores e um mascote que criassem um laço
+              <br>com o cliente. Realizei a criação do logo e cartão
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 
 <script>
-    window.onload = main;
+  window.onload = main;
 
-    function main() {
-        // 1
-        'use strict';
+  function main() {
+    // 1
+    'use strict';
 
-        // 2
-        document.getElementsByClassName('btn--logo')[0].addEventListener('click', function (e) {
-            let btn = document.getElementsByClassName('btn--logo')[0];
-            let logos = document.querySelectorAll('.logo');
-            let logosArr = Array.from(logos)
-                .forEach(function (x) {
-                    if (x.style.display == 'none') {
-                        x.style.display = 'block';
-                        btn.classList.add("btn--ativo");
-                    } else {
-                        x.style.display = 'none';
-                        btn.classList.remove("btn--ativo");
-                    }
-                })
+    // 2
+    document.getElementsByClassName('btn--logo')[0].addEventListener('click', function (e) {
+      let btn = document.getElementsByClassName('btn--logo')[0];
+      let logos = document.querySelectorAll('.projetos__thumb');
+      let logosArr = Array.from(logos)
+      if (btn.classList.contains('btn--ativo')) {
+        logosArr.forEach(function (x) {
+          x.children[0].style.display = 'block';
+          btn.classList.remove('btn--ativo');
         })
-    }
+      } else {
+        logosArr.forEach(function (x) {
+          if (x.firstElementChild.classList.contains("logo")) {
+            x.firstElementChild.style.display = 'block';
+            btn.classList.add('btn--ativo');
+          } else {
+            x.firstElementChild.style.display = 'none';
+          }
+        })
+      }
+    })
+
+    document.getElementsByClassName('btn--web')[0].addEventListener('click', function (e) {
+      let btn = document.getElementsByClassName('btn--web')[0];
+      let web = document.querySelectorAll('.projetos__thumb');
+      let webArr = Array.from(web)
+      if (btn.classList.contains('btn--ativo')) {
+        webArr.forEach(function (x) {
+          x.children[0].style.display = 'block';
+          btn.classList.remove('btn--ativo');
+        })
+      } else {
+        webArr.forEach(function (x) {
+          if (x.firstElementChild.classList.contains("web")) {
+            x.firstElementChild.style.display = 'block';
+            btn.classList.add('btn--ativo');
+          } else {
+            x.firstElementChild.style.display = 'none';
+          }
+        })
+      }
+    })
+  }
 </script>
 
 </html>

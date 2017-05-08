@@ -74,6 +74,10 @@ body {
 		font-size: $var-2*1.7;
 		text-transform: uppercase;
 	}
+	.btn:hover {
+		cursor: pointer;
+	}
+
 	.btn--ativo {
 		@include line-gradient(#D4E4E5,
 		$cor-5);
@@ -97,6 +101,10 @@ body {
 	}
 }
 
+.projetos__thumb:hover img {
+	cursor: pointer;
+}
+
 .projetos__conteudo {
 	margin-top: 10px;
 	h2 {
@@ -108,4 +116,13 @@ body {
 		color: $cor-1;
 		font-weight: 300;
 	}
+}
+
+.projetos--link {
+	color: $cor-2;
+	transition: all .5s ease-in-out;
+}
+
+.projetos--link:hover {
+	color: $cor-5;
 }
