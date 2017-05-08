@@ -6,6 +6,7 @@ $cor-3: #333;
 $cor-4: #000;
 $cor-5: #BFD9DC;
 $cor-6: line-gradient($cor-5,$cor-2);
+$cor-7: #fff;
 
 // VALORES
 $var-1: 10pt;
@@ -18,5 +19,5 @@ $var-4: 1%;
   background: $cor1;
   background: -webkit-linear-gradient(to bottom, $cor1 0%, $cor2 100%) !important;
   background: -moz-linear-gradient(to bottom, $cor1 0%, $cor2 100%) !important;
-  background: linear-gradient(to bottom, $cor1 0%, $cor2 100%) !important;
+  background: linear-gradient(to bottom, $cor1 0%, $cor2 100%, transparent) !important;
 }
