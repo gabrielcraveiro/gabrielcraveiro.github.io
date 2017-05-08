@@ -19,8 +19,8 @@
             <h2 class="autor">Gabriel Craveiro</h1>
                 <p class="autor__profissao">Web Developer from Santos</p>
                 <ul class="menu">
-                    <li><a class="active" href="">Home</a></li>
-                    <li><a href="">Portfolio</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="" class="active">Projetos</a></li>
                     <li><a href="">Resume</a></li>
                     <li><a target="_blank" href="https://github.com/gabrielcraveiro/">Github</a></li>
                     <li><a target="_blank" href="">Blog</a></li>
@@ -29,11 +29,50 @@
         </div>
         <section class="column projetos">
             <h1>Projetos</h1>
-            <button class="btn">Logo</button>
+            <button class="btn btn--logo">Logo</button>
             <button class="btn">Web Design</button>
             <button class="btn">.JS</button>
+            <div class="projetos__thumb">
+                <div class="projetos--coala logo">
+                    <img src="..\img\thumbnails\coalaDocesThum.png" alt="">
+                    <div class="projetos__conteudo">
+                        <h2>Coala Doces</h2>
+                        <p>HTML - CSS - Bootstrap - Sass - JS - Adobe Suit</p>
+                        <p>
+                            Conceito de doceria onde haveria a utilização
+                            <br>de cores e um mascote que criassem um laço
+                            <br>com o cliente. Realizei a criação do logo e cartão
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
+
+<script>
+    window.onload = main;
+
+    function main() {
+        // 1
+        'use strict';
+
+        // 2
+        document.getElementsByClassName('btn--logo')[0].addEventListener('click', function (e) {
+            let btn = document.getElementsByClassName('btn--logo')[0];
+            let logos = document.querySelectorAll('.logo');
+            let logosArr = Array.from(logos)
+                .forEach(function (x) {
+                    if (x.style.display == 'none') {
+                        x.style.display = 'block';
+                        btn.classList.add("btn--ativo");
+                    } else {
+                        x.style.display = 'none';
+                        btn.classList.remove("btn--ativo");
+                    }
+                })
+        })
+    }
+</script>
 
 </html>

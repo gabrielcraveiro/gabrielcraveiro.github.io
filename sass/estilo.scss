@@ -19,7 +19,7 @@ body {
 		letter-spacing: -1.5pt;
 		font-weight: 300;
 		color: $cor-1;
-		margin-bottom: -10px;
+		margin-bottom: -5px;
 	}
 	.autor__profissao {
 		font-size: $var-1*1.5;
@@ -69,12 +69,43 @@ body {
 		-moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
 		box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
 		margin-right: 5px;
+		margin-left: 2px;
 		color: $cor-1;
 		font-size: $var-2*1.7;
 		text-transform: uppercase;
 	}
 	.btn--ativo {
-		@include line-gradient(#D4E4E5, $cor-5);
+		@include line-gradient(#D4E4E5,
+		$cor-5);
 		color: $cor-2
+	}
+	.btn--ativo:active {
+		border: none;
+		@include line-gradient(#D4E4E5,
+		$cor-5);
+		color: $cor-2
+	}
+}
+
+.projetos__thumb {
+	margin-top: 30px;
+	margin-left: 0;
+	clear: both;
+	img {
+		float: left;
+		margin-right: 20px;
+	}
+}
+
+.projetos__conteudo {
+	margin-top: 10px;
+	h2 {
+		font-size: $var-1*1.6;
+	}
+	p {
+		font-family: 'Lato';
+		font-size: $var-2*2.3;
+		color: $cor-1;
+		font-weight: 300;
 	}
 }
