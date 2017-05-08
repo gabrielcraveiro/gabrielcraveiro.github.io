@@ -47,3 +47,34 @@ body {
 		}
 	}
 }
+
+.projetos {
+	font-family: 'Quicksand';
+	margin-top: 15vh;
+	padding-top: 0px!important;
+	margin-left: 8vh;
+	h1 {
+		font-size: $var-1*2;
+		font-weight: 300;
+		color: $cor-1;
+	}
+	.btn {
+		font-family: 'Quicksand';
+		margin-top: 15px;
+		width: 100px;
+		height: 35px;
+		background: none;
+		border: none;
+		-webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
+		-moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
+		box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
+		margin-right: 5px;
+		color: $cor-1;
+		font-size: $var-2*1.7;
+		text-transform: uppercase;
+	}
+	.btn--ativo {
+		@include line-gradient(#D4E4E5, $cor-5);
+		color: $cor-2
+	}
+}
