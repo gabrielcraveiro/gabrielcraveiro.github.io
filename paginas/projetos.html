@@ -8,8 +8,7 @@
   <title>Gabriel Craveiro - Web Dev</title>
   <link rel="stylesheet" href="../css/estilo.css" type="text/css">
   <link rel="stylesheet" type="" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
-
-
+  <script src="../js/script.js"></script>
 
 </head>
 
@@ -78,56 +77,6 @@
   </div>
 </body>
 
-<script>
-  window.onload = main;
 
-  function main() {
-    // 1
-    'use strict';
-
-    // 2
-    document.getElementsByClassName('btn--logo')[0].addEventListener('click', function (e) {
-      let btn = document.getElementsByClassName('btn--logo')[0];
-      let logos = document.querySelectorAll('.projetos__thumb');
-      let logosArr = Array.from(logos)
-      if (btn.classList.contains('btn--ativo')) {
-        logosArr.forEach(function (x) {
-          x.children[0].style.display = 'block';
-          btn.classList.remove('btn--ativo');
-        })
-      } else {
-        logosArr.forEach(function (x) {
-          if (x.firstElementChild.classList.contains("logo")) {
-            x.firstElementChild.style.display = 'block';
-            btn.classList.add('btn--ativo');
-          } else {
-            x.firstElementChild.style.display = 'none';
-          }
-        })
-      }
-    })
-
-    document.getElementsByClassName('btn--web')[0].addEventListener('click', function (e) {
-      let btn = document.getElementsByClassName('btn--web')[0];
-      let web = document.querySelectorAll('.projetos__thumb');
-      let webArr = Array.from(web)
-      if (btn.classList.contains('btn--ativo')) {
-        webArr.forEach(function (x) {
-          x.children[0].style.display = 'block';
-          btn.classList.remove('btn--ativo');
-        })
-      } else {
-        webArr.forEach(function (x) {
-          if (x.firstElementChild.classList.contains("web")) {
-            x.firstElementChild.style.display = 'block';
-            btn.classList.add('btn--ativo');
-          } else {
-            x.firstElementChild.style.display = 'none';
-          }
-        })
-      }
-    })
-  }
-</script>
 
 </html>
