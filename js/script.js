@@ -87,18 +87,18 @@ function main() {
   document.getElementsByClassName('btn--web')[0].addEventListener('click', function () {
     filtrar('btn--web', 'web');
   });
-  // document.getElementsByClassName('btn--js')[0].addEventListener('click', function () {
-  //   filtrar('btn--js', 'js');
+  document.getElementsByClassName('btn--js')[0].addEventListener('click', function () {
+    filtrar('btn--js', 'js');
+  });
+  // document.getElementsByClassName('pagina--1')[0].addEventListener('click', function (x) {
+  //   mudarPagina(1);
   // });
-  document.getElementsByClassName('pagina--1')[0].addEventListener('click', function (x) {
-    mudarPagina(1);
-  });
-  document.getElementsByClassName('pagina--2')[0].addEventListener('click', function (x) {
-    mudarPagina(2);
-  });
-  document.getElementsByClassName('pagina--3')[0].addEventListener('click', function (x) {
-    mudarPagina(3);
-  });
+  // document.getElementsByClassName('pagina--2')[0].addEventListener('click', function (x) {
+  //   mudarPagina(2);
+  // });
+  // document.getElementsByClassName('pagina--3')[0].addEventListener('click', function (x) {
+  //   mudarPagina(3);
+  // });
 }
 
 
