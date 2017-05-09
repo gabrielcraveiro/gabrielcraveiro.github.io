@@ -4,6 +4,13 @@ body {
 	font-size: 16px;
 	font-family: 'Lato';
 	backgroud: #272935;
+	a {
+		color: $cor-1;
+		transition: all .5s ease-in-out;
+	}
+	a:hover {
+		color: $cor-3;
+	}
 }
 
 .sidebar {
@@ -45,6 +52,12 @@ body {
 		a:hover {
 			color: $cor-3;
 		}
+	}
+	a {
+		color: $cor-3;
+	}
+	a:hover {
+		color: #000;
 	}
 }
 
