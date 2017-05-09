@@ -1,7 +1,7 @@
 @import "var-func.scss";
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Quicksand');
 body {
-	font-size: 10px;
+	font-size: 16px;
 	font-family: 'Lato';
 	backgroud: #272935;
 }
@@ -141,6 +141,14 @@ body {
 	}
 	h3 {
 		font-weight: bold;
+	}
+	h2 {
+		font-size: $var-1*1.4;
+	}
+	p {
+		font-size: $var-2*2.1;
+		color: $cor-1;
+		font-weight: 300;
 	}
 }
 
