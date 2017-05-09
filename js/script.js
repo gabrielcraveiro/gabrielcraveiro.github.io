@@ -27,7 +27,7 @@ function filtrar(opc, opc2) {
       x.children[0].style.display = 'block';
       btn.classList.remove('btn--ativo');
     });
-  } 
+  }
   // else if (retornaAtivos()) {
   //   let ativos = document.getElementsByClassName('btn--ativo');
   // } 
@@ -35,7 +35,9 @@ function filtrar(opc, opc2) {
     webArr.forEach(function (x) {
       if (x.firstElementChild.classList.contains(opc2)) {
         x.firstElementChild.style.display = 'block';
-        ativosArr.forEach(function (x){x.classList.remove('btn--ativo');});
+        ativosArr.forEach(function (x) {
+          x.classList.remove('btn--ativo');
+        });
         btn.classList.add('btn--ativo');
       } else {
         x.firstElementChild.style.display = 'none';
@@ -44,15 +46,58 @@ function filtrar(opc, opc2) {
   }
 }
 
+function hide() {
+  'use strict';
+  let paginas = Array.from(document.getElementsByClassName('projetos__pagina'));
+  paginas
+    .filter(function (x) {
+      return !x.classList.contains('pp1');
+    })
+    .forEach(function (x) {
+      x.style.display = 'none';
+    });
+}
+
+function mudarPagina(pag) {
+  'use strict';
+  console.log('oi');
+  let paginas = Array.from(document.getElementsByClassName('projetos__pagina'));
+  paginas
+    .forEach(function(x) {
+      x.style.display = 'none';
+    });
+  paginas
+    .filter(function (x) {
+      return x.classList.contains('pp'+pag);
+    })  
+    .forEach(function (x) {
+      x.style.display = 'block';
+    });
+}
+
 function main() {
   // 1
   'use strict';
+
+  hide();
   // 2
   document.getElementsByClassName('btn--logo')[0].addEventListener('click', function () {
     filtrar('btn--logo', 'logo');
   });
   document.getElementsByClassName('btn--web')[0].addEventListener('click', function () {
     filtrar('btn--web', 'web');
+  });
+  // document.getElementsByClassName('btn--js')[0].addEventListener('click', function () {
+  //   filtrar('btn--js', 'js');
+  // });
+  document.getElementsByClassName('pagina--1')[0].addEventListener('click', function (x) {
+    mudarPagina(1);
+  });
+  document.getElementsByClassName('pagina--2')[0].addEventListener('click', function (x) {
+    mudarPagina(2);
+  });
+  document.getElementsByClassName('pagina--3')[0].addEventListener('click', function (x) {
+    mudarPagina(3);
   });
 }
 
