@@ -66,6 +66,8 @@ body {
 		font-size: $var-1*2;
 		font-weight: 300;
 		color: $cor-2;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.btn {
 		font-family: 'Quicksand';
@@ -197,17 +199,19 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	a {}
 }
 
-.nav-item a.is-tab:hover, a.nav-item.is-tab:hover {
-    border-bottom-color: $cor-2!important;
-    border-top-color: transparent;
+.nav-item a.is-tab:hover,
+a.nav-item.is-tab:hover {
+	border-bottom-color: $cor-2!important;
+	border-top-color: transparent;
 }
 
-.nav-item a.is-tab, a.nav-item.is-tab {
-    border-bottom: 1px solid #eee!important;
+.nav-item a.is-tab,
+a.nav-item.is-tab {
+	border-bottom: 1px solid #eee!important;
 }
+
 .cases--image {
 	width: 900px;
 }
