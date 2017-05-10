@@ -22,47 +22,69 @@ function filtrar(opc, opc2) {
   let btn = document.getElementsByClassName(opc)[0];
   let ativosArr = Array.from(document.getElementsByClassName('btn--ativo'));
   let webArr = Array.from(document.querySelectorAll('.projetos__thumb'));
+  let pag1 = document.getElementsByClassName('pp1')[0];
+  let pag2 = document.getElementsByClassName('pp2')[0];
+
+
   if (btn.classList.contains('btn--ativo')) {
     webArr.forEach(function (x) {
-      x.children[0].style.display = 'block';
+      x.style.display = 'block';
+      if (x.classList.contains('temp')) {
+        pag2.appendChild(x);
+        x.classList.remove('temp');
+      }
       btn.classList.remove('btn--ativo');
     });
-  }
-  // else if (retornaAtivos()) {
-  //   let ativos = document.getElementsByClassName('btn--ativo');
-  // } 
-  else {
+  } else {
     webArr.forEach(function (x) {
-      if (x.firstElementChild.classList.contains(opc2)) {
-        x.firstElementChild.style.display = 'block';
+      if (x.classList.contains(opc2)) {
+        x.style.display = 'block';
         ativosArr.forEach(function (x) {
           x.classList.remove('btn--ativo');
         });
+        if (x.parentElement.classList.contains('pp2')) {
+          x.classList.add('temp');
+          pag1.appendChild(x);
+        }
         btn.classList.add('btn--ativo');
       } else {
-        x.firstElementChild.style.display = 'none';
+        x.style.display = 'none';
       }
     });
   }
+
 }
+
+
 
 function mudarPagina(n) {
   'use strict';
   var paginas = document.querySelectorAll('.projetos__pagina');
   var paginasArr = Array.from(paginas);
-  console.log(paginasArr);
   paginasArr
     .forEach(function (x) {
-      if (x.classList.contains('pp'+n)) {
-        x.classList.add = 'fadeOut';
+      if (x.classList.contains('pp' + n)) {
         x.style.display = 'block';
       } else {
         x.style.display = 'none';
       }
     });
+  // if (n == 1) {
+  //   document.getElementsByClassName('pagina--ativa')[0].classList.remove('pagina--ativa')
+  // }
 }
 
-
+// function filtrar(btn, opc) {
+//   'use strict';
+//   var projpag = Array.from(document.querySelectorAll('.projetos__thumb'));
+//   var btn = document.querySelector(btn);
+//   projpag.forEach(function(x) {
+//     if (!x.classList.contains(opc)) {
+//       x.style.display = 'none';
+//       btn.classList.add('btn--ativo');
+//     }
+//   })
+// }
 
 function main() {
   // 1
