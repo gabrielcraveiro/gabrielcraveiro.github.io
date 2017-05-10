@@ -46,40 +46,28 @@ function filtrar(opc, opc2) {
   }
 }
 
-function hide() {
+function mudarPagina(n) {
   'use strict';
-  let paginas = Array.from(document.getElementsByClassName('projetos__pagina'));
-  paginas
-    .filter(function (x) {
-      return !x.classList.contains('pp1');
-    })
+  var paginas = document.querySelectorAll('.projetos__pagina');
+  var paginasArr = Array.from(paginas);
+  console.log(paginasArr);
+  paginasArr
     .forEach(function (x) {
-      x.style.display = 'none';
+      if (x.classList.contains('pp'+n)) {
+        x.classList.add = 'fadeOut';
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
     });
 }
 
-function mudarPagina(pag) {
-  'use strict';
-  console.log('oi');
-  let paginas = Array.from(document.getElementsByClassName('projetos__pagina'));
-  paginas
-    .forEach(function(x) {
-      x.style.display = 'none';
-    });
-  paginas
-    .filter(function (x) {
-      return x.classList.contains('pp'+pag);
-    })  
-    .forEach(function (x) {
-      x.style.display = 'block';
-    });
-}
+
 
 function main() {
   // 1
   'use strict';
 
-  hide();
   // 2
   document.getElementsByClassName('btn--logo')[0].addEventListener('click', function () {
     filtrar('btn--logo', 'logo');
@@ -90,12 +78,12 @@ function main() {
   document.getElementsByClassName('btn--js')[0].addEventListener('click', function () {
     filtrar('btn--js', 'js');
   });
-  // document.getElementsByClassName('pagina--1')[0].addEventListener('click', function (x) {
-  //   mudarPagina(1);
-  // });
-  // document.getElementsByClassName('pagina--2')[0].addEventListener('click', function (x) {
-  //   mudarPagina(2);
-  // });
+  document.getElementsByClassName('pagina--1')[0].addEventListener('click', function (x) {
+    mudarPagina(1);
+  });
+  document.getElementsByClassName('pagina--2')[0].addEventListener('click', function (x) {
+    mudarPagina(2);
+  });
   // document.getElementsByClassName('pagina--3')[0].addEventListener('click', function (x) {
   //   mudarPagina(3);
   // });

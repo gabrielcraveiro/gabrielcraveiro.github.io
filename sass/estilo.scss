@@ -136,6 +136,11 @@ body {
 	transition: all .5s ease-in-out;
 }
 
+.projetos__pagina {
+		transition: all 1s ease-in-out;
+
+}
+
 .projetos--link:hover {
 	color: $cor-5;
 }
@@ -172,4 +177,23 @@ body {
 .wr img {
 	margin-bottom: 0;
 	padding-bottom: 0;
+}
+
+.pp2 {
+	display: none;
+}
+
+@-webkit-keyframes fadeout {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+@keyframes fadeout {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+.fadeOut {
+  opacity:0;
+  -moz-animation   : fadeout 1s linear;
+  -webkit-animation: fadeout 1s linear;
+  animation        : fadeout 1s linear;
 }
