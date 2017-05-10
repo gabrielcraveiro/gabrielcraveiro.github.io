@@ -13,6 +13,14 @@ body {
 	}
 }
 
+.icones {
+	width: 30px;
+}
+
+.icones2 {
+	width: 23px;
+}
+
 .sidebar {
 	margin-top: 15vh;
 	margin-left: 15vh;
@@ -34,27 +42,15 @@ body {
 		color: $cor-1;
 		margin-bottom: 10px;
 	}
-	.menu {
-		li {
-			font-size: $var-2*2.3;
-			font-weight: 300;
-			letter-spacing: -0.75px;
-			color: $cor-2;
-		}
-		.active {
-			color: $cor-2;
-			border-bottom: 1px solid #eee;
-		}
-		a {
-			color: $cor-1;
-			transition: all .5s ease-in-out;
-		}
-		a:hover {
-			color: $cor-3;
-		}
+	p {
+		font-family: Quicksand;
+		font-size: 12pt;
+		color: $cor-1!important;
+		margin-right: 40px;
 	}
 	a {
 		color: $cor-3;
+		text-decoration: underline;
 	}
 	a:hover {
 		color: #000;
@@ -69,7 +65,7 @@ body {
 	h1 {
 		font-size: $var-1*2;
 		font-weight: 300;
-		color: $cor-1;
+		color: $cor-2;
 	}
 	.btn {
 		font-family: 'Quicksand';
@@ -205,10 +201,13 @@ body {
 }
 
 .nav-item a.is-tab:hover, a.nav-item.is-tab:hover {
-    border-bottom-color: $cor-3!important;
+    border-bottom-color: $cor-2!important;
     border-top-color: transparent;
 }
 
+.nav-item a.is-tab, a.nav-item.is-tab {
+    border-bottom: 1px solid #eee!important;
+}
 .cases--image {
 	width: 900px;
 }
