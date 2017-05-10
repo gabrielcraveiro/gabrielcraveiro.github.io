@@ -19,6 +19,7 @@
 
 function filtrar(opc, opc2) {
   'use strict';
+  mudarPagina(1);
   let btn = document.getElementsByClassName(opc)[0];
   let ativosArr = Array.from(document.getElementsByClassName('btn--ativo'));
   let webArr = Array.from(document.querySelectorAll('.projetos__thumb'));
@@ -30,9 +31,10 @@ function filtrar(opc, opc2) {
     webArr.forEach(function (x) {
       x.style.display = 'block';
       if (x.classList.contains('temp')) {
-        pag2.appendChild(x);
+        pag2.insertBefore(x, pag2.firstChild);
         x.classList.remove('temp');
       }
+      document.getElementsByClassName('pagina--2')[0].style.visibility = 'visible';
       btn.classList.remove('btn--ativo');
     });
   } else {
@@ -46,6 +48,7 @@ function filtrar(opc, opc2) {
           x.classList.add('temp');
           pag1.appendChild(x);
         }
+        document.getElementsByClassName('pagina--2')[0].style.visibility = 'hidden';
         btn.classList.add('btn--ativo');
       } else {
         x.style.display = 'none';
