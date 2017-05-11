@@ -26,7 +26,6 @@ function filtrar(opc, opc2) {
   let pag1 = document.getElementsByClassName('pp1')[0];
   let pag2 = document.getElementsByClassName('pp2')[0];
 
-
   if (btn.classList.contains('btn--ativo')) {
     webArr.forEach(function (x) {
       x.style.display = 'block';
@@ -62,6 +61,8 @@ function filtrar(opc, opc2) {
 
 function mudarPagina(n) {
   'use strict';
+
+
   var paginas = document.querySelectorAll('.projetos__pagina');
   var paginasArr = Array.from(paginas);
   paginasArr

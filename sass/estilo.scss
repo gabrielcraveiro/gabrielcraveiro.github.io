@@ -103,6 +103,14 @@ body {
 	}
 }
 
+.btn--ativo {
+	background: #555!important;
+	color: $cor-7!important;
+}
+
+
+
+
 .projetos__thumb {
 	margin-top: 30px;
 	margin-left: 0;
@@ -241,6 +249,11 @@ a.nav-item.is-tab {
 	100% {
 		opacity: 0;
 	}
+}
+
+.fadeIn {
+	transition: all 1s ease-in-out;
+	display: block;
 }
 
 .fadeOut {
