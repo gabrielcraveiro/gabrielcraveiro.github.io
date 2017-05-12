@@ -57,17 +57,12 @@ body {
 		font-size: $var-1*2.5;
 		color: $cor-2;
 	}
-	.projetos--imagem--esquerda,
-	.projetos--imagem--direita div img {
-		width: 300px
+	.projetos__imagem img {
+		margin: 15px 15px 0 15px;
+		height: 346px;
+		transition: all .3s ease-in-out;
 	}
-	.projetos--imagem--esquerda img {
-		margin-right: 0
-	}
-	.projetos--imagem--direita img {
-		margin-left: 0;
-	}
-	.projetos__thumb:hover img {
+	.projetos__imagem:hover img {
 		cursor: pointer;
 	}
 	.projetos--link {
@@ -123,6 +118,15 @@ body {
 	.btn:focus {
 		outline: #333;
 	}
+}
+
+@media screen and (max-width: 550px) {        
+  img {
+      max-width: 100% !important;
+      height:auto !important;
+      align: center !important;
+      display:block !important;
+   }
 }
 
 // .pagina--ativa {
