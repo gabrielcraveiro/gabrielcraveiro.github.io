@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Quicksand');
 body {
 	font-size: 16px;
-	font-family: 'Lato';
+	font-family: 'Quicksand';
 	backgroud: #272935;
 	a {
 		color: $cor-1;
@@ -13,61 +13,86 @@ body {
 	}
 }
 
-.icones {
-	width: 30px;
-}
-
-.icones2 {
-	width: 23px;
-}
-
-.sidebar {
-	margin-top: 15vh;
-	margin-left: 15vh;
-	padding-top: 0px!important;
-	border-right: 1px solid #ddd;
-	padding-right: -20%;
-	height: 50vh;
-	font-family: 'Quicksand';
-	.autor {
-		font-size: $var-1*2.2;
-		letter-spacing: -1.5pt;
-		font-weight: 300;
-		color: $cor-3;
-		margin-bottom: -5px;
-	}
-	.autor__profissao {
+.nav {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	.titulo--nav {
 		font-size: $var-1*1.5;
-		font-weight: 300;
-		color: $cor-1;
-		margin-bottom: 10px;
+	} // Itens da Nav
+	.nav-item a.is-tab:hover,
+	a.nav-item.is-tab:hover {
+		border-bottom-color: $cor-2!important;
+		border-top-color: transparent;
 	}
-	p {
-		font-family: Quicksand;
-		font-size: 12pt;
-		color: $cor-1!important;
-		margin-right: 40px;
-	}
-	a {
-		color: $cor-3;
-		text-decoration: underline;
-	}
-	a:hover {
-		color: #000;
+	.nav-item a.is-tab,
+	a.nav-item.is-tab {
+		border-bottom: 1px solid #eee!important;
 	}
 }
 
 .projetos {
+	margin-top: 80px;
 	font-family: 'Quicksand';
-	margin-top: 15vh;
 	padding-top: 0px!important;
-	margin-left: 8vh;
-	h1 {
+	.header {
+		font-size: $var-1*2.5;
+		color: $cor-3;
+	}
+	.header--profissao {
+		margin-top: 0px;
 		font-size: $var-1*2;
-		font-weight: 300;
 		color: $cor-2;
-		margin-left: auto;
-		margin-right: auto;
+		font-weight: 500;
+	}
+	.header--descricao {
+		margin-top: 20px;
+		font-size: $var-1*1.6;
+		color: $cor-1;
+		font-weight: 300;
+	}
+	.header--projeto {
+		margin-top: 5%;
+		font-size: $var-1*2.5;
+		color: $cor-2;
+	}
+	.projetos__thumb {
+		margin-top: 30px;
+		margin-left: 0;
+		clear: both;
+		img {
+			width: 327.5px;
+			height: 160px;
+			float: left;
+			margin-right: 20px;
+		}
+	}
+	.projetos__thumb:hover img {
+		cursor: pointer;
+	}
+	.projetos--link {
+		color: $cor-2;
+		transition: all .5s ease-in-out;
+	}
+	.projetos__pagina {
+		transition: all 1s ease-in-out;
+	}
+	.projetos--link:hover {
+		color: $cor-5;
+	}
+	.projetos__pagina--lista {
+		ul {
+			position: absolute;
+		}
+		li {
+			display: inline;
+			padding-right: 20px;
+			float: left;
+			cursor: pointer;
+			color: $cor-1;
+			bottom: 0;
+		}
 	}
 	.btn {
 		font-family: 'Quicksand';
@@ -97,73 +122,6 @@ body {
 	}
 	.btn:focus {
 		outline: #333;
-	}
-	h3 {
-		margin-bottom: 10px;
-	}
-}
-
-.btn--ativo {
-	background: #555!important;
-	color: $cor-7!important;
-}
-
-
-
-
-.projetos__thumb {
-	margin-top: 30px;
-	margin-left: 0;
-	clear: both;
-	img {
-		width: 327.5px;
-		height: 160px;
-		float: left;
-		margin-right: 20px;
-	}
-}
-
-.projetos__thumb:hover img {
-	cursor: pointer;
-}
-
-.projetos__conteudo {
-	margin-bottom: 3%;
-	h2 {
-		font-size: $var-1*1.6;
-	}
-	p {
-		font-family: 'Lato';
-		font-size: $var-2*2.1;
-		color: $cor-1;
-		font-weight: 300;
-	}
-}
-
-.projetos--link {
-	color: $cor-2;
-	transition: all .5s ease-in-out;
-}
-
-.projetos__pagina {
-	transition: all 1s ease-in-out;
-}
-
-.projetos--link:hover {
-	color: $cor-5;
-}
-
-.projetos__pagina--lista {
-	ul {
-		position: absolute;
-	}
-	li {
-		display: inline;
-		padding-right: 20px;
-		float: left;
-		cursor: pointer;
-		color: $cor-1;
-		bottom: 0;
 	}
 }
 
@@ -198,28 +156,6 @@ body {
 	}
 }
 
-.titulo--nav {
-	font-size: $var-1*1.5;
-}
-
-.nav {
-	position: fixed !important;
-	top: 0;
-	left: 0;
-	right: 0;
-}
-
-.nav-item a.is-tab:hover,
-a.nav-item.is-tab:hover {
-	border-bottom-color: $cor-2!important;
-	border-top-color: transparent;
-}
-
-.nav-item a.is-tab,
-a.nav-item.is-tab {
-	border-bottom: 1px solid #eee!important;
-}
-
 .cases--image {
 	width: 900px;
 }
@@ -251,16 +187,16 @@ a.nav-item.is-tab {
 	}
 }
 
-.fadeIn {
-	transition: all 1s ease-in-out;
-	display: block;
-}
-
 .fadeOut {
 	opacity: 0;
 	-moz-animation: fadeout 1s linear;
 	-webkit-animation: fadeout 1s linear;
 	animation: fadeout 1s linear;
+}
+
+.fadeIn {
+	transition: all 1s ease-in-out;
+	display: block;
 }
 
 @media screen and (max-width: 1100px) {

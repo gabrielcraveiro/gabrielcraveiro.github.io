@@ -90,7 +90,7 @@ function mudarPagina(n) {
 //   })
 // }
 
-function main() {
+function main() { 
   // 1
   'use strict';
 
@@ -104,10 +104,10 @@ function main() {
   document.getElementsByClassName('btn--js')[0].addEventListener('click', function () {
     filtrar('btn--js', 'js');
   });
-  document.getElementsByClassName('pagina--1')[0].addEventListener('click', function (x) {
+  document.getElementsByClassName('pagina--1')[0].addEventListener('click', function () {
     mudarPagina(1);
   });
-  document.getElementsByClassName('pagina--2')[0].addEventListener('click', function (x) {
+  document.getElementsByClassName('pagina--2')[0].addEventListener('click', function () {
     mudarPagina(2);
   });
   // document.getElementsByClassName('pagina--3')[0].addEventListener('click', function (x) {
