@@ -33,7 +33,7 @@ body {
 }
 
 .projetos {
-	margin-top: 80px;
+	margin-top: 150px;
 	font-family: 'Quicksand';
 	padding-top: 0px!important;
 	.header {
@@ -53,20 +53,19 @@ body {
 		font-weight: 300;
 	}
 	.header--projeto {
-		margin-top: 5%;
+		margin-top: 30px;
 		font-size: $var-1*2.5;
 		color: $cor-2;
 	}
-	.projetos__thumb {
-		margin-top: 30px;
+	.projetos--imagem--esquerda,
+	.projetos--imagem--direita div img {
+		width: 300px
+	}
+	.projetos--imagem--esquerda img {
+		margin-right: 0
+	}
+	.projetos--imagem--direita img {
 		margin-left: 0;
-		clear: both;
-		img {
-			width: 327.5px;
-			height: 160px;
-			float: left;
-			margin-right: 20px;
-		}
 	}
 	.projetos__thumb:hover img {
 		cursor: pointer;
@@ -95,6 +94,7 @@ body {
 		}
 	}
 	.btn {
+		margin-bottom: 30px;
 		font-family: 'Quicksand';
 		margin-top: 15px;
 		width: 100px;
