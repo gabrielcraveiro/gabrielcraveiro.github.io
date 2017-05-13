@@ -13,7 +13,12 @@
   <script src="js/script.js"></script>
 
   <style>
-
+    #particle-canvas>canvas {
+      z-index: -1!important;
+    }
+    #particle-canvas > div:nth-child(2) {
+      z-index: -1;
+    }
   </style>
 
 </head>
@@ -36,7 +41,7 @@
 
     <section class="column has-text-centered projetos">
       <h1 class="header">Gabriel Craveiro</h1>
-      <h2 class="header--profissao">Desenvolvedor Web de Santos</p>
+      <h2 class="header--profissao">Desenvolvedor Web - Santos</p>
         <ul class="header--descricao">
           <li>Programação Funcional</li>
           <li>Interfaces minimalistas</li>
@@ -65,10 +70,8 @@
             <a href="paginas/projetos_js.html"><img class="projeto--img js" src="img\thumbnails\es.jpg" alt="Logo do projeto JS"></a>
           </div>
         </div>
-
-
-
     </section>
+
     <script src="js/particles.js"></script>
 
 </body>
