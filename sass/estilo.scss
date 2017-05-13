@@ -75,36 +75,53 @@ section {
 		cursor: pointer;
 		border-bottom: 1px solid $cor-1;
 	}
-	.projetos--link {
-		color: $cor-2;
-		transition: all .5s ease-in-out;
-	}
-	.projetos__pagina {
-		transition: all 1s ease-in-out;
-	}
-	.projetos--link:hover {
-		color: $cor-5;
-	}
 }
 
 #particles-js {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	z-index: -10;
-	top: 0;
-	left: 0
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
 }
 
-#particles-js canvas {
-	display: block;
-	vertical-align: bottom;
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-	opacity: 1;
-	-webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-	transition: opacity .8s ease, transform 1.4s ease
+
+.projetos--link {
+	color: $cor-2;
+	transition: all .5s ease-in-out;
+}
+
+.projetos__pagina {
+	transition: all 1s ease-in-out;
+}
+
+.projetos--link:hover {
+	color: $cor-5;
+}
+
+.projetos__pagina--lista {
+	ul {
+		position: absolute;
+	}
+	li {
+		display: inline;
+		padding-right: 20px;
+		float: left;
+		cursor: pointer;
+		color: $cor-1;
+		bottom: 0;
+	}
 }
 
 .btn {
@@ -123,7 +140,6 @@ section {
 	font-size: $var-2*2.3;
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
-
 	&:hover {
 		cursor: pointer;
 		background: #555!important;
@@ -132,13 +148,22 @@ section {
 	&:focus {
 		outline: #333;
 	}
-
-	.btn--ativo {
-		background: #555!important;
-		color: $cor-7!important;
-	}
 }
 
+.btn--ativo {
+	background: #555!important;
+	color: $cor-7!important;
+}
+
+@media screen and (max-width: 550px) {
+	img {
+		max-width: 100% !important;
+		height: auto !important;
+		align: center !important;
+		display: block !important;
+		margin: 0;
+	}
+}
 
 // .pagina--ativa {
 // 	color: $cor-3;
@@ -202,17 +227,6 @@ section {
 	}
 }
 
-.fadeOut {
-	opacity: 0;
-	-moz-animation: fadeout 1s linear;
-	-webkit-animation: fadeout 1s linear;
-	animation: fadeout 1s linear;
-}
-
-.fadeIn {
-	transition: all 1s ease-in-out;
-	display: block;
-}
 
 @media screen and (max-width: 1100px) {
 	body {
@@ -229,15 +243,5 @@ section {
 		-moz-transform: scale(-2);
 		-moz-transform-origin: 0 0;
 		;
-	}
-}
-
-@media screen and (max-width: 550px) {
-	img {
-		max-width: 100% !important;
-		height: auto !important;
-		align: center !important;
-		display: block !important;
-		margin: 0;
 	}
 }

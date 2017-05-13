@@ -1,5 +1,3 @@
-
-
 /**
  * Remove todos os projetos que não estão de acordo com o filtro
  * 
@@ -12,14 +10,18 @@ function filtro(btnTipo, escolha) {
   const projetos = Array.from(document.getElementsByClassName('projeto--img'));
   if (btn.classList.contains('btn--ativo')) {
     btn.classList.remove('btn--ativo');
-    projetos.forEach((x) => x.style.display = 'inline-block');
-  } else {
+    projetos.forEach((x) => {
+      x.classList.remove('fadeOut');
+      x.classList.add('fadeIn');
+      x.style.display = 'inline-block';
+    });
+  } else { // Remove
     btn.classList.add('btn--ativo');
     projetos.forEach((x) => {
       if (!x.classList.contains(escolha)) {
-        x.style.display = 'none';
+        x.classList.add('animated','fadeOut');
       }
-    })
+    });
   }
 }
 
@@ -29,7 +31,7 @@ function main() {
 
   // 2
   document.getElementsByClassName('btn--logo')[0].addEventListener('click', function () {
-    filtro('btn--logo', 'logo')
+    filtro('btn--logo', 'logo');
   });
   document.getElementsByClassName('btn--web')[0].addEventListener('click', function () {
     filtro('btn--web', 'web');
