@@ -158,9 +158,10 @@ section {
     color: #fff !important; }
   .btn:focus {
     outline: #333; }
-  .btn .btn--ativo {
-    background: #555 !important;
-    color: #fff !important; }
+
+.btn--ativo {
+  background: #555 !important;
+  color: #fff !important; }
 
 .paginas--footer {
   font-size: 15px;

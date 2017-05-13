@@ -192,11 +192,12 @@ section {
 	&:focus {
 		outline: #333;
 	}
+}
+
 	.btn--ativo {
 		background: #555!important;
 		color: $cor-7!important;
 	}
-}
 
 .paginas--footer {
 	font-size: $var-1*1.5;
