@@ -59,15 +59,16 @@ body {
 	.projetos__imagem img {
 		margin: 15px 15px 0 15px;
 		height: 346px;
-		transition: all .3s ease-in-out;
-		border: 1px solid transparent;
-		transition: 0.5s ease-in-out;
+		border-bottom: 1px solid transparent;
+		transition: 0.5s ease;
+		white-space: nowrap;
 	}
 	.projetos__imagem img:hover {
 		cursor: pointer;
 		border-bottom: 1px solid $cor-1;
 	}
 }
+
 
 .projetos--link {
 	color: $cor-2;
