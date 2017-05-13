@@ -16,12 +16,36 @@
     #particle-canvas>canvas {
       z-index: -1!important;
     }
-    #particle-canvas > div:nth-child(2) {
+
+    #particle-canvas>div:nth-child(2) {
       z-index: -1;
     }
   </style>
 
 </head>
+
+<!--TODO:
+  body: 13px
+  h1: 1.8em
+  data: 0.9em
+
+  @media only screen and (min-width: 34em)
+  .text_body {
+    font-size: 23px;
+  }
+  .fontserifsize-3 .reader_head, .fontserifsize-3 .text_body {
+      font-size: 19px;
+  }
+  @media only screen and (min-width: 34em)
+  .fontsize-3 .reader_head, .fontsize-3 .text_body {
+      font-size: 22px;
+  }
+  .fontsize-3 .reader_head, .fontsize-3 .text_body {
+      font-size: 18px;
+  }
+
+
+-->
 
 <!-- classe--modifier classe__descendente -->
 
@@ -37,9 +61,8 @@
       </div>
     </nav>
 
-    <!-- Sidebar -->
 
-    <section class="column has-text-centered projetos">
+    <main class="column is-12 has-text-centered projetos">
       <h1 class="header">Gabriel Craveiro</h1>
       <h2 class="header--profissao">Desenvolvedor Web - Santos</p>
         <ul class="header--descricao">
@@ -70,10 +93,12 @@
             <a href="paginas/projetos_js.html"><img class="projeto--img js" src="img\thumbnails\es.jpg" alt="Logo do projeto JS"></a>
           </div>
         </div>
-    </section>
 
-    <script src="js/particles.js"></script>
-
+          <ul class="paginas--footer">
+            <li>Gabriel Craveiro - 2017</li>
+          </ul>
+    </main>
 </body>
+<script src="js/particles.js"></script>
 
 </html>

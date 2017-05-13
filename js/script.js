@@ -9,7 +9,8 @@ function filtro(btnTipo, escolha) {
   const btn = document.querySelector('.' + btnTipo);
   const projetos = Array.from(document.getElementsByClassName('projeto--img'));
   if (btn.classList.contains('btn--ativo')) {
-    btn.classList.remove('btn--ativo');
+    const btnTodos = document.querySelectorAll('.btn');
+    btnTodos.forEach(x => x.classList.remove('btn--ativo'));
     projetos.forEach((x) => {
       x.classList.remove('fadeOut');
       x.classList.add('fadeIn');

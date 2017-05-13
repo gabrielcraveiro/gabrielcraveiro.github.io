@@ -77,6 +77,11 @@ section {
 	}
 }
 
+
+.teste {
+	left: 50;
+}
+
 #particles-js {
 	width: 100%;
 	height: 100%;
@@ -184,6 +189,12 @@ section {
 	p {
 		text-align: left
 	}
+}
+
+.paginas--footer {
+	font-size: $var-1*1.5;
+	color: $cor-2;
+	display: inline-block;
 }
 
 .cases--image {
