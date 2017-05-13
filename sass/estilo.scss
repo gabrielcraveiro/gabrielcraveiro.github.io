@@ -33,11 +33,10 @@ body {
 }
 
 .projetos {
-	margin-top: 150px;
+	margin-top: 120px;
 	font-family: 'Quicksand';
-	padding-top: 0px!important;
 	.header {
-		font-size: $var-1*2.5;
+		font-size: $var-1*2.8;
 		color: $cor-3;
 	}
 	.header--profissao {
@@ -47,87 +46,95 @@ body {
 		font-weight: 500;
 	}
 	.header--descricao {
-		margin-top: 20px;
+		margin-top: 10px;
 		font-size: $var-1*1.6;
 		color: $cor-1;
 		font-weight: 300;
 	}
 	.header--projeto {
-		margin-top: 30px;
-		font-size: $var-1*2.5;
+		margin-top: 40px;
+		font-size: $var-1*2.8;
 		color: $cor-2;
 	}
 	.projetos__imagem img {
 		margin: 15px 15px 0 15px;
 		height: 346px;
 		transition: all .3s ease-in-out;
+		border: 1px solid transparent;
+		transition: 0.5s ease-in-out;
 	}
-	.projetos__imagem:hover img {
+	.projetos__imagem img:hover {
 		cursor: pointer;
+		border-bottom: 1px solid $cor-1;
 	}
-	.projetos--link {
-		color: $cor-2;
-		transition: all .5s ease-in-out;
+}
+
+.projetos--link {
+	color: $cor-2;
+	transition: all .5s ease-in-out;
+}
+
+.projetos__pagina {
+	transition: all 1s ease-in-out;
+}
+
+.projetos--link:hover {
+	color: $cor-5;
+}
+
+.projetos__pagina--lista {
+	ul {
+		position: absolute;
 	}
-	.projetos__pagina {
-		transition: all 1s ease-in-out;
-	}
-	.projetos--link:hover {
-		color: $cor-5;
-	}
-	.projetos__pagina--lista {
-		ul {
-			position: absolute;
-		}
-		li {
-			display: inline;
-			padding-right: 20px;
-			float: left;
-			cursor: pointer;
-			color: $cor-1;
-			bottom: 0;
-		}
-	}
-	.btn {
-		margin-bottom: 30px;
-		font-family: 'Quicksand';
-		margin-top: 15px;
-		width: 100px;
-		height: 35px;
-		background: none;
-		border: none;
-		-webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
-		-moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
-		box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
-		margin-right: 5px;
-		margin-left: 2px;
+	li {
+		display: inline;
+		padding-right: 20px;
+		float: left;
+		cursor: pointer;
 		color: $cor-1;
-		font-size: $var-2*1.7;
-		text-transform: uppercase;
-		transition: all .3s ease-in-out;
+		bottom: 0;
 	}
-	.btn:hover {
+}
+
+.btn {
+	margin-bottom: 30px;
+	margin-top: 40px;
+	margin-right: 5px;
+	margin-left: 2px;
+	width: 120px;
+	height: 45px;
+	background: none;
+	border: none;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.36);
+	color: $cor-1;
+	font-size: $var-2*2.3;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+	&:hover {
 		cursor: pointer;
 		background: #555!important;
 		color: $cor-7!important;
 	}
-	.btn--ativo {
-		background: #555!important;
-		color: $cor-7!important;
-	}
-	.btn:focus {
+	&:focus {
 		outline: #333;
 	}
 }
 
-@media screen and (max-width: 550px) {        
-  img {
-      max-width: 100% !important;
-      height:auto !important;
-      align: center !important;
-      display:block !important;
-			margin: 0;
-   }
+.btn--ativo {
+	background: #555!important;
+	color: $cor-7!important;
+}
+
+@media screen and (max-width: 550px) {
+	img {
+		max-width: 100% !important;
+		height: auto !important;
+		align: center !important;
+		display: block !important;
+		margin: 0;
+	}
 }
 
 // .pagina--ativa {
