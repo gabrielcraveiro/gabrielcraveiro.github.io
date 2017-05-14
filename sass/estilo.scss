@@ -146,6 +146,37 @@ section {
 			font-size: 1.3em;
 		}
 	}
+	.posts--resume {
+		font-family: 'Quicksand';
+		line-height: 1.5;
+		text-align: left;
+		font-weight: 500;
+		color: #555;
+		line-height: 1.5;
+		margin-bottom: 1.25em;
+		text-rendering: optimizeLegibility;
+		h2 {
+			color: #555!important;
+			font-size: 0.9em!important;
+			font-weight: bold!important;
+		}
+		p,
+		li {
+			font-size: 0.9em!important;
+		}
+		h1 {
+			color: #555!important;
+			font-size: 1.2em;
+		}
+	}
+	.posts--resume--conhecimento {
+		color: $cor-2;
+		font-weight: bold;
+	}
+	.resume--btn {
+		background: #666;;
+		color: white;
+	}
 }
 
 #particles-js {
@@ -194,10 +225,10 @@ section {
 	}
 }
 
-	.btn--ativo {
-		background: #555!important;
-		color: $cor-7!important;
-	}
+.btn--ativo {
+	background: #555!important;
+	color: $cor-7!important;
+}
 
 .paginas--footer {
 	font-size: $var-1*1.5;

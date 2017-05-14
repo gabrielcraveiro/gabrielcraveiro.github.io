@@ -20,7 +20,7 @@ function filtro(btnTipo, escolha) {
     btn.classList.add('btn--ativo');
     projetos.forEach((x) => {
       if (!x.classList.contains(escolha)) {
-        x.classList.add('animated','fadeOut');
+        x.classList.add('animated', 'fadeOut');
       }
     });
   }
