@@ -323,3 +323,11 @@ section {
 		;
 	}
 }
+
+    #particle-canvas>canvas {
+      z-index: -1!important;
+    }
+
+    #particle-canvas>div:nth-child(2) {
+      z-index: -1;
+    }
