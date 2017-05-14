@@ -145,37 +145,48 @@ section {
 			color: #222;
 			font-size: 1.3em;
 		}
-	}
+	} // Pagina Resume
 	.posts--resume {
 		font-family: 'Quicksand';
-		line-height: 1.5;
+		margin-bottom: 1.25em;
 		text-align: left;
+		line-height: 1.5;
 		font-weight: 500;
 		color: #555;
-		line-height: 1.5;
-		margin-bottom: 1.25em;
 		text-rendering: optimizeLegibility;
 		h2 {
-			color: #555!important;
-			font-size: 0.9em!important;
-			font-weight: bold!important;
+			margin-bottom: 5px;
+			border-bottom: 1px solid #ccc;
+			font-size: 0.9em;
+			font-weight: bold;
+			color: #555;
 		}
 		p,
 		li {
-			font-size: 0.9em!important;
+			font-size: 0.9em;
 		}
 		h1 {
-			color: #555!important;
+			border-bottom: 1px solid #ccc;
 			font-size: 1.2em;
+			color: #555;
 		}
 	}
 	.posts--resume--conhecimento {
-		color: $cor-2;
 		font-weight: bold;
+		color: $cor-2;
 	}
 	.resume--btn {
-		background: #666;;
-		color: white;
+		background: none;
+		color: #777;
+	}
+
+	// Blog
+	.posts--blog li a {
+		color: #aaa;
+		&:hover {
+			color: #666!important;
+			border-bottom: 1px solid #888!important;
+		}
 	}
 }
 

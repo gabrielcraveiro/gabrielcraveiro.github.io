@@ -119,29 +119,36 @@ section {
       font-size: 1.3em; }
   .posts .posts--resume {
     font-family: 'Quicksand';
-    line-height: 1.5;
+    margin-bottom: 1.25em;
     text-align: left;
+    line-height: 1.5;
     font-weight: 500;
     color: #555;
-    line-height: 1.5;
-    margin-bottom: 1.25em;
     text-rendering: optimizeLegibility; }
     .posts .posts--resume h2 {
-      color: #555 !important;
-      font-size: 0.9em !important;
-      font-weight: bold !important; }
+      margin-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+      font-size: 0.9em;
+      font-weight: bold;
+      color: #555; }
     .posts .posts--resume p,
     .posts .posts--resume li {
-      font-size: 0.9em !important; }
+      font-size: 0.9em; }
     .posts .posts--resume h1 {
-      color: #555 !important;
-      font-size: 1.2em; }
+      border-bottom: 1px solid #ccc;
+      font-size: 1.2em;
+      color: #555; }
   .posts .posts--resume--conhecimento {
-    color: #6a6a6a;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #6a6a6a; }
   .posts .resume--btn {
-    background: #666;
-    color: white; }
+    background: none;
+    color: #777; }
+  .posts .posts--blog li a {
+    color: #aaa; }
+    .posts .posts--blog li a:hover {
+      color: #666 !important;
+      border-bottom: 1px solid #888 !important; }
 
 #particles-js {
   width: 100%;
