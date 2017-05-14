@@ -170,6 +170,9 @@ section {
 			font-size: 1.2em;
 			color: #555;
 		}
+		a {
+					border-bottom: 1px solid #ddd;
+		}
 	}
 	.posts--resume--conhecimento {
 		font-weight: bold;
@@ -182,12 +185,18 @@ section {
 
 	// Blog
 	.posts--blog li a {
-		color: #aaa;
+		color: #777;
+		font-weight: bold;
 		&:hover {
 			color: #666!important;
 			border-bottom: 1px solid #888!important;
 		}
 	}
+}
+
+.icon {
+	height: 15px!important;
+	color: #666;
 }
 
 #particles-js {
