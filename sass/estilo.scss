@@ -111,9 +111,9 @@ section {
 	.posts--titulo {
 		margin-top: 0;
 		text-align: center;
-		font-size: 2em;
-		font-weight: 700;
-		color: #222;
+		font-size: 2.2em;
+		font-weight: 300;
+		color: #333;
 		margin: 1em 0 0;
 		line-height: 1.2;
 		padding-bottom: .1em;
@@ -123,6 +123,7 @@ section {
 		width: 100px;
 		height: 35px;
 		margin: 0 auto;
+		margin-top: 20px;
 		-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.36);
 		-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.36);
 		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.36);
@@ -135,17 +136,32 @@ section {
 	}
 	.posts--conteudo {
 		font-family: 'Quicksand';
-		line-height: 1.5;
-		text-align: left;
-		font-size: 1em;
-		font-weight: 500;
-		color: #333;
-		line-height: 1.5;
 		margin-bottom: 1.25em;
+		text-align: left;
+		line-height: 1.5;
+		font-weight: 500;
+		color: #555;
 		text-rendering: optimizeLegibility;
 		h2 {
-			color: #222;
+			font-family: 'Lato';
+			font-weight: 300;
 			font-size: 1.3em;
+			color: #222;
+			border-bottom: 1px solid #ddd;
+		}
+		p,
+		li {
+			font-size: 1em;
+		}
+		h1 {
+			font-family: 'Lato';
+			font-weight: 300;
+			font-size: 1.3em;
+			color: #333;
+			border-bottom: 1px solid #ddd;
+		}
+		a {
+			border-bottom: 1px solid #ddd;
 		}
 	} // Pagina Resume
 	.posts--resume {
@@ -199,10 +215,14 @@ section {
 	}
 	.posts--titulo--alt {
 		font-weight: 300;
+		font-size: 2.2em;
 		font-family: 'Lato';
 	}
 	.posts--data {
 		font-size: 0.9em;
+	}
+	.posts--imagem {
+		width: 100%;
 	}
 }
 
