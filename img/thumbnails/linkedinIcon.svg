@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-    <g transform="matrix(1,0,0,1,-196,-159)">
-        <g id="linkedin" transform="matrix(1,0,0,1,193,156)">
-            <path d="M21,21L17,21L17,14.25C17,13.191 15.812,12.306 14.754,12.306C13.695,12.306 13,13.191 13,14.25L13,21L9,21L9,9L13,9L13,11C13.662,9.929 15.356,9.237 16.525,9.237C18.997,9.237 21,11.279 21,13.75L21,21ZM7,21L3,21L3,9L7,9L7,21ZM5,3C6.105,3 7,3.895 7,5C7,6.105 6.105,7 5,7C3.895,7 3,6.105 3,5C3,3.895 3.895,3 5,3Z" style="fill:rgb(190,190,190);fill-rule:nonzero;"/>
-        </g>
-    </g>
-</svg>
