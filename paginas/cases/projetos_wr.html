@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gabriel Craveiro - Web Dev</title>
+  <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
   <link rel="stylesheet" href="../../css/estilo.css" type="text/css">
   <link rel="stylesheet" type="" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
-  <script src="../../js/script.js"></script>
-
 </head>
+
 
 <body>
   <nav class="nav is-fixed-top">
@@ -20,7 +20,7 @@
         <a class="nav-item is-tab" href="../../index.html">Home</a>
         <!--<a class="nav-item is-tab" href="https://www.linkedin.com/in/gabriel-craveiro-83b2b8112/">Linkedin</a>-->
         <a class="nav-item is-tab" target="_blank" href="https://github.com/gabrielcraveiro/">Github</a>
-        <a class="nav-item is-tab" href="../resume.html">Resume</a>
+        <a class="nav-item is-tab hidden" href="../resume.html">Resume</a>
         <a class="nav-item is-tab" href="../blog.html">Blog</a>
         <a class="nav-item is-tab" href="mailto:gabriel.c.craveiro@gmail.com">Email</a>
       </div>
@@ -57,11 +57,11 @@
           <a href="https://www.behance.net/gallery/47720527/WR-Marine-Service-Branding-Book-e-Website">Behance</a></p>
         <br>
         <h2>Logo</h2>
-        <img style="margin-left: -20px" src="../../img/cases/w3.png" alt="">
+        <img src="../../img/cases/w3.png" alt="">
         <br>
-        <img style="margin-left: -20px" src="../../img/cases/w5.png" alt="">
+        <img src="../../img/cases/w5.png" alt="">
         <br>
-        <img style="margin-left: -20px" src="../../img/cases/w6.png" alt="">
+        <img src="../../img/cases/w6.png" alt="">
         <br>
         <h2>Produto final</h2>
         <img class="cases--image" src="../../img/cases/w1.png" alt="">
@@ -74,14 +74,20 @@
 </body>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
   ga('create', 'UA-99241400-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 
 </html>

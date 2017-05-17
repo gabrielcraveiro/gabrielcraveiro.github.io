@@ -22,6 +22,7 @@ section {
 }
 
 .nav {
+	font-size: 1.2em;
 	position: fixed !important;
 	top: 0;
 	left: 0;
@@ -314,7 +315,19 @@ section {
 }
 
 @media screen and (max-width: 1100px) {
+	.container {
+		width: 95vmin;
+	}
 	body {
+		font-size: 1.4em;
+		zoom: 1;
+		-moz-transform: scale(0.8);
+		-moz-transform-origin: 0 0;
+	}
+	.is-tab {
+		font-size: 1.1em!important;
+		margin-left: 0;
+		margin-right: -4px;
 	}
 	.header {
 		font-size: 1.8em!important;
@@ -343,14 +356,14 @@ section {
 	#particle-canvas>div:nth-child(2) {
 		z-index: -1;
 	}
-
-	.btn--logo, .btn--web, .btn--js {
-		display:none
+	.btn--logo,
+	.btn--web,
+	.btn--js {
+		display: none
 	}
 }
 
-@media screen and (max-width: 1300px) {
-}
+@media screen and (max-width: 1300px) {}
 
 #particle-canvas>canvas {
 	z-index: -1!important;
@@ -361,6 +374,6 @@ section {
 }
 
 .centralizar {
-	  display: block;
-    margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 }
