@@ -315,9 +315,6 @@ section {
 
 @media screen and (max-width: 1100px) {
 	body {
-		zoom: 0.7;
-		-moz-transform: scale(-2);
-		-moz-transform-origin: 0 0;
 	}
 	.header {
 		font-size: 1.8em!important;
@@ -335,9 +332,8 @@ section {
 		color: $cor-1;
 		font-weight: 300;
 	}
-	.btn {
-		display: none;
-		width: 130px;
+	.posts--btn {
+		width: 100px!important;
 		z-index: 2;
 		font-size: $var-2*2.5;
 	}
@@ -347,15 +343,13 @@ section {
 	#particle-canvas>div:nth-child(2) {
 		z-index: -1;
 	}
+
+	.btn--logo, .btn--web, .btn--js {
+		display:none
+	}
 }
 
 @media screen and (max-width: 1300px) {
-	body {
-		zoom: 0.8;
-		-moz-transform: scale(-2);
-		-moz-transform-origin: 0 0;
-		;
-	}
 }
 
 #particle-canvas>canvas {
