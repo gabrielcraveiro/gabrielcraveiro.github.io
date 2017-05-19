@@ -11,6 +11,18 @@ body {
 	a:hover {
 		color: $cor-3;
 	}
+	h1 {
+
+	}
+	h2 {
+		margin-top: 20px;
+	}
+	h3 {
+
+	}
+	p {
+
+	}
 }
 
 #particle-canvas {
@@ -139,6 +151,7 @@ section {
 		text-align: center;
 		color: $cor-1;
 		margin-bottom: 20px;
+		margin-top: 0;
 	}
 	.posts--conteudo {
 		font-family: 'Quicksand';
@@ -160,7 +173,7 @@ section {
 			font-size: 1em;
 		}
 		h1 {
-			font-family: 'Lato';
+			font-family: inherit;
 			font-weight: 300;
 			font-size: 1.3em;
 			color: #333;
