@@ -16,7 +16,8 @@ body {
 	a:hover {
 		color: $cor-3;
 	}
-	h1,h2 {
+	h1,
+	h2 {
 		font-family: "Lato", sans-serif;
 		font-size: 1.5rem;
 		font-weight: 500;
@@ -52,7 +53,8 @@ body {
 		word-spacing: -0.10px;
 		text-transform: none;
 	}
-	li {
+	li,
+	{
 		font-family: "Quicksand", sans-serif;
 		font-size: 1.2rem;
 		font-weight: 500;
@@ -186,7 +188,6 @@ section {
 		-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.36);
 		-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.36);
 		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.36);
-		border-bottom: 1px solid #ddd;
 	}
 	.posts--meta {
 		text-align: center;
@@ -207,6 +208,19 @@ section {
 		a {
 			border-bottom: 1px solid #ddd;
 		}
+		h1,
+		h2 {
+			font-size: 1.4rem;
+		}
+		h3 {
+			font-size: 1.25rem;
+		}
+		p {
+			font-size: 1.15rem;
+		}
+		li {
+			font-size: 1.15rem;
+		}
 	}
 	.resume--btn {
 		background: none;
@@ -214,22 +228,26 @@ section {
 		margin-top: 0;
 	} // Blog
 	.posts--blog li a {
-		font-family: 'EB Garamond';
-		color: #232;
-		font-weight: 400;
-		font-size: 1.3em;
-		transition: none;
+		color: #222;
+		font-weight: 500;
+		font-size: 1.3rem;
 		&:hover {
-			color: #A2B4Ba;
+			color: firebrick;
 		}
 	}
-	.posts--titulo--alt {
-		font-weight: 300;
-		font-size: 2.2em;
-		font-family: 'Lato';
-	}
 	.posts--data {
-		font-size: 0.9em;
+		color: #aaa;
+		font-size: 1rem;
+	}
+	.posts--titulo--alt {
+		font-family: Karla;
+		font-weight: 400;
+		line-height: 1.20;
+		opacity: 0.8;
+		margin-top: 30px;
+		letter-spacing: -0.72px;
+		word-spacing: 0.00px;
+		text-transform: none;
 	}
 	.posts--imagem {
 		width: 100%;
@@ -269,7 +287,7 @@ section {
 	width: 120px;
 	height: 45px;
 	background: none;
-	border: 1px solid #ddd;
+	border: 1px solid #eee;
 	color: $cor-1;
 	font-size: $var-2*2.3;
 	text-transform: uppercase;
