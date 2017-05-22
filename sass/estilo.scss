@@ -6,6 +6,11 @@ html {
 	font-size: 16px;
 }
 
+.has-text-centered {
+	text-align: center;
+	margin: 0 auto;
+}
+
 body {
 	a {
 		color: $cor-1;
