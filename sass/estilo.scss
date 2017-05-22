@@ -99,7 +99,7 @@ section {
 		border-bottom: 1px solid #eee!important;
 	}
 	a {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		opacity: 1;
 	}
 	.lim {
@@ -113,18 +113,21 @@ section {
 .projetos {
 	margin-top: 30px;
 	.header {
-		font-size: 1.8rem;
-		color: #333;
+		font-family: 'Karla';
+		font-size: 1.7rem;
+		color: #3e3e3e;
 	}
 	.header--profissao {
 		margin-top: 0px;
-		font-size: 1.4rem;
-		color: $cor-2;
+		font-size: 1.3rem;
+		color: #666;
+		margin-bottom: 20px;
 	}
 	.header--descricao {
-		margin-top: 10px;
-		font-size: $var-1*1.6;
-		color: $cor-1;
+		margin-top: 40px;
+		font-size: 1.2rem;
+		color: #666;
+		margin: 0 auto;
 		font-weight: 300;
 	}
 	.header--projeto {
@@ -167,9 +170,12 @@ section {
 	}
 }
 
+.centered {
+	margin: 0 auto;
+}
+
 .projeto--img {
-	width: 345px;
-	height: 346px;
+	width: 290px;
 }
 
 .posts {
@@ -316,7 +322,7 @@ section {
 }
 
 .paginas--footer {
-	font-size: $var-1*1.5;
+	font-size: $var-1*1.2;
 	color: $cor-2;
 	text-align: center!important;
 }
