@@ -1,7 +1,5 @@
 @import "var-func.scss";
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
-@import 'https://fonts.googleapis.com/css?family=Lato:700,400|Karla:400';
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import 'https://fonts.googleapis.com/css?family=Lato:700,400|Quicksand';
 html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -113,22 +111,26 @@ section {
 .projetos {
 	margin-top: 30px;
 	.header {
-		font-family: 'Karla';
+		font-family: 'Lato';
 		font-size: 1.7rem;
-		color: #3e3e3e;
+		color: #555;
 	}
 	.header--profissao {
 		margin-top: 0px;
+		font-family: 'Lato';
 		font-size: 1.3rem;
+		opacity: 0.8;
 		color: #666;
 		margin-bottom: 20px;
 	}
 	.header--descricao {
 		margin-top: 40px;
 		font-size: 1.2rem;
-		color: #666;
+		font-family: 'Lato';
+		color: #999;
+		opacity: 0.9;
 		margin: 0 auto;
-		font-weight: 300;
+		font-weight: 400;
 	}
 	.header--projeto {
 		margin-top: 40px;
@@ -253,7 +255,7 @@ section {
 		font-size: 1rem;
 	}
 	.posts--titulo--alt {
-		font-family: Karla;
+		font-family: 'Quicksand';
 		font-weight: 400;
 		line-height: 1.20;
 		opacity: 0.8;
@@ -380,7 +382,7 @@ section {
 		margin-top: 10px;
 		font-size: $var-1*2.2!important;
 		color: $cor-1;
-		font-weight: 300;
+		font-weight: 400;
 	}
 	.posts--btn {
 		width: 100px!important;

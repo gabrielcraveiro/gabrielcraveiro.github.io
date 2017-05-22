@@ -81,7 +81,7 @@
 });
 var canvasDiv = document.getElementById('particle-canvas');
 var options = {
-  particleColor: '#e0e0e0',
+  particleColor: '#dedede',
   interactive: true,
   speed: 'easy',
   density: 'easy'
