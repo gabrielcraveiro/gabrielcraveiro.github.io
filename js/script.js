@@ -30,6 +30,7 @@ function main() {
   // 1
   'use strict';
 
+
   // 2
   document.getElementsByClassName('btn--logo')[0].addEventListener('click', function () {
     filtro('btn--logo', 'logo');
