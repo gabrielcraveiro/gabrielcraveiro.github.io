@@ -1,3 +1,13 @@
+function reorganizar() {
+  'use strict';
+  const projetos = Array.from(document.getElementsByClassName('projeto--img'));
+  projetos.forEach(x => x.style.opacity = '0');
+  setInterval(function () {
+    projetos.filter(x => x.classList.contains('fadeOut')).forEach(x => x.style.display = 'none');
+  }, 600);
+  projetos.forEach(x => x.style.opacity = '1');
+}
+
 /**
  * Remove todos os projetos que não estão de acordo com o filtro
  * 
@@ -17,12 +27,15 @@ function filtro(btnTipo, escolha) {
       x.style.display = 'inline-block';
     });
   } else { // Remove
+    reorganizar();
     btn.classList.add('btn--ativo');
-    projetos.forEach((x) => {
-      if (!x.classList.contains(escolha)) {
-        x.classList.add('animated', 'fadeOut');
-      }
-    });
+    setTimeout(function () {
+      projetos.forEach((x) => {
+        if (!x.classList.contains(escolha)) {
+          x.classList.add('animated', 'fadeOut');
+        }
+      });
+    }, 150);
   }
 }
 
