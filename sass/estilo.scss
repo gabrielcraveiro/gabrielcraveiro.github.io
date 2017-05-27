@@ -201,15 +201,29 @@ section {
 }
 
 .projeto--img {
-	width: 290px;
+	width: 260px;
+	border-bottom: 1px solid transparent;
+	transition: 0.5s ease;
+	z-index: 5;
+}
+.projeto--img:hover {
+	cursor: pointer;
+	border-bottom: 1px solid $cor-1;
 }
 
+
 .titulo {
-		margin-top: 0;
-		text-align: center;
-		font-size: 2.4rem;
-		margin: 1em 0 0;
-		padding-bottom: .1em;
+	margin-top: 0;
+	text-align: center;
+	font-size: 2.4rem;
+	margin: 1em 0 0;
+	padding-bottom: .1em;
+}
+
+.grid {
+	display: none;
+		transition: 0.5s ease;
+
 }
 
 .posts {
