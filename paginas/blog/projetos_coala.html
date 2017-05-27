@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gabriel Craveiro - Web Dev</title>
+  <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="../../css/estilo.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
+  <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+  </style>
+</head>
+
+
+
+<body>
+  <nav class="nav is-fixed-top">
+    <div class="container">
+      <div class="nav-center nav-menu has-text-centered	">
+        <a class="nav-item is-tab" href="../../index.html">Home</a>
+        <!--<a class="nav-item is-tab" href="https://www.linkedin.com/in/gabriel-craveiro-83b2b8112/">Linkedin</a>-->
+        <a class="nav-item is-tab" target="_blank" href="https://github.com/gabrielcraveiro/">Github</a>
+        <a class="nav-item is-tab" href="../resume.html">Resume</a>
+        <a class="nav-item is-tab" href="../blog.html">Blog</a>
+        <a class="nav-item is-tab" href="mailto:gabriel.c.craveiro@gmail.com">Email</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="columns">
+    <!-- Main -->
+
+    <article class="column  is-half is-offset-one-quarter h-entry is-half">
+<header>
+<h1 class="p-name">Como usar o prepros para compilar automaticamente arquivos .SCSS</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+O prepros é um compilador que funciona em diversas linguagens, mas hoje gostaria de ensinar a utilizar o programa para vigiar, minificar e…
+</section>
+<section data-field="body" class="e-content">
+<section name="ed48" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="1bbc" id="1bbc" class="graf graf--h4 graf--leading">Como usar o prepros para compilar automaticamente arquivos .SCSS</h4><figure name="58f9" id="58f9" class="graf graf--figure graf-after--h4"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 336px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 48%;"></div><img class="graf-image" data-image-id="1*i7rt2D9-WqbsUN3_2czpTw.png" data-width="1166" data-height="560" src="https://cdn-images-1.medium.com/max/800/1*i7rt2D9-WqbsUN3_2czpTw.png"></div></figure><p name="c551" id="c551" class="graf graf--p graf-after--figure">O prepros é um compilador que funciona em diversas linguagens, mas hoje gostaria de ensinar a utilizar o programa para vigiar, minificar e compilar seu arquivo .scss automaticamente, facilitando assim o desenvolvimento de sites ou aplicativos.</p><p name="5a90" id="5a90" class="graf graf--p graf-after--p">O programa em si é pago, mas possui um tempo ilimitado de trial, mostrando uma mensagem pedindo para o usuário comprar caso o mesmo se interesse, ficando a critério nosso escolher se desejamos então nos livrar da mensagem.</p><p name="f470" id="f470" class="graf graf--p graf-after--p">Para baixar o programa vá até o <a href="https://prepros.io/" data-href="https://prepros.io/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">site da prepros</a> e escolha a opção de baixar o trial ilimitado.</p><p name="383d" id="383d" class="graf graf--p graf-after--p">Após abrir o programa pela primeira vez, simplesmente arraste uma pasta que contenha o arquivo scss e o seu projeto. O próprio programa vai mostrar na aba principal a arvore de arquivos que você poderia vir a mexer. Nesse post vou mostrar como configurei um arquivo em uma pasta sass para minificar, compilar e minificar já para a pasta css um arquivo estilo.</p><p name="1435" id="1435" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Utilizando na prática</strong>: na imagem abaixo destaquei as três principais funções que você pode retirar do prepros.</p></div><div class="section-inner sectionLayout--outsetColumn"><figure name="7344" id="7344" class="graf graf--figure graf--layoutOutsetCenter graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 295px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 29.5%;"></div><img class="graf-image" data-image-id="1*0TJOqIjSMygfjFxv7XztSw.png" data-width="1920" data-height="567" src="https://cdn-images-1.medium.com/max/1000/1*0TJOqIjSMygfjFxv7XztSw.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><ul class="postList"><li name="ef5c" id="ef5c" class="graf graf--li graf-after--figure"><strong class="markup--strong markup--li-strong">OUTPUT PATH:</strong> após passar a pasta para o programa, procure por seu arquivo .scss e clique nele, após você escolher um arquivo com extensão compatível, você pode então escolher o seu destino, eu escolhi um arquivo css já existente. Após escolher o local, ao salvar o arquivo em um editor de textos, o arquivo será automaticamente compilado para o local escolhido.</li><li name="83db" id="83db" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Minify CSS:</strong> esse é meio obvio, mas ao escolher essa opção o css após compilação será automaticamente minificado. Vantagens da minificação são redução de tamanho de arquivo e velocidade. Você pode conferir diversos pontos de usuários tanto a favor como contra a minificação <a href="https://pt.stackoverflow.com/questions/88058/quais-as-vantagens-e-desvantagens-de-minificar-scripts-js" data-href="https://pt.stackoverflow.com/questions/88058/quais-as-vantagens-e-desvantagens-de-minificar-scripts-js" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">nesse post do stackoverflow</a>.</li><li name="3041" id="3041" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Live reload:</strong> ao clicar no icone do mundo, o prepros abre o navegador com uma versão local do seu site, a grande e melhor vantagem disso é o live-reload, ao salvar no arquivo ele ja recarrega o navegador, deixando bem mais fluído o desenvolvimento.</li></ul><figure name="bf63" id="bf63" class="graf graf--figure graf-after--li"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 225px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 32.2%;"></div><img class="graf-image" data-image-id="1*oa5bEm_kbD5gmhYVdw8pAQ.gif" data-width="870" data-height="280" src="https://cdn-images-1.medium.com/max/800/1*oa5bEm_kbD5gmhYVdw8pAQ.gif"></div><figcaption class="imageCaption">Live Reload</figcaption></figure><p name="4ba7" id="4ba7" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Referências:</strong></p><blockquote name="7de4" id="7de4" class="graf graf--blockquote graf-after--p graf--trailing">Conteúdo: site da <a href="https://prepros.io/" data-href="https://prepros.io/" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">site da prepros</a>.<br> Imagens: GIF utilizando o exemplo do próprio desenvolvedor, feito com a ferramenta LICECap</blockquote></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@gabrielcraveiro" class="p-author h-card">Gabriel Craveiro</a> on <a href="https://medium.com/p/99f073a98cef"><time class="dt-published" datetime="2017-05-14T03:44:10.448Z">May 14, 2017</time></a>.</p><p>Exported from <a href="https://medium.com">Medium</a> on May 27, 2017.</p></footer></article>
+
+  </div>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-99241400-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+
+</html>

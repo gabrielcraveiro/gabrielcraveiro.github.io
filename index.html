@@ -15,9 +15,18 @@
   <link rel="stylesheet" href="css/estilo.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" type="text/css">
 
+  <style>
+    .cartao {
+      margin: 0;
+      width: 800px;
+      height: 500px;
+      border: 1px solid #333;
+    }
+  </style>
+
 </head>
 
-<body id="particle-canvas">
+<body id="">
 
 
   <nav class="nav is-fixed-top">
@@ -35,41 +44,41 @@
   <div class="columns">
 
 
-    <main class="column is-12 has-text-centered projetos">
-      <h1 class="header">Gabriel Craveiro</h1>
-      <h2 class="header--profissao">Desenvolvedor Web - Santos</h2>
-      <div class="centered" style="width: 400px">
-        <p class="header--descricao">
-          Aluno de Sistemas para Internet da FATEC-RL, sou um programador com uma inclinação por programação funcional,
-          interfaces limpas e desenvolvimento js.
-        </p>
-      </div>
+    <main class="column is-half is-offset-one-quarter projetos posts">
+      <h1 class="posts--titulo">Gabriel Craveiro</h1>
+      <p class="has-text-centered" style="color: #777">ultimos projetos</p>
       <!-- Botões Projetos -->
-      <button class="btn btn--logo">Logo</button>
-      <button class="btn btn--web">Web Design</button>
-      <button class="btn btn--js">.JS</button>
-
-      <!-- Projetos -->
-
-      <div class="columns is-marginless filtro">
-        <div class="projetos__imagem column has-text-centered">
-          <!-- Classes para o filtro -->
-          <a href="paginas/cases/projetos_apollo.html"><img class="projeto--img logo web" src="img/thumbnails/apolloThumb.svg" alt="Logo do projeto Apollo"></a>
-          <a href="paginas/cases/projetos_wr.html"><img style="width: 260px" class="projeto--img web logo" src="img/thumbnails/wrThumb.svg" alt="Logo do projeto Wr Marine"></a>
-          <a href="paginas/cases/projetos_coala.html"><img class="projeto--img logo" src="img/thumbnails/coalaThumb.svg" alt="Logo do projeto Coala Doces"></a>
-        </div>
+      <br>
+      <div class="">
+        <br>
+        <ul class="posts--blog">
+          <li><a href="paginas/cases/projetos_apollo.html">Apollo UX - Coletivo de Desenvolvedores</a></li>
+          <em class="posts--data">23 de Maio de 2017</em>
+          <li><a href="paginas/cases/projetos_js.html">Form-Slicer.js - Biblioteca que transforma formularios em multiplas paginas</a></li>
+          <em class="posts--data">26 de Maio de 2017</em>
+          <li><a href="paginas/cases/projetos_ozeni.html">Ozeni Lima - Escritora de Auto-Ajuda com livros no Brasil e Portugal</a></li>
+          <em class="posts--data">20 de abril de 2017</em>
+          <li><a href="paginas/cases/projetos_wr.html">WR Marine Service - Empresa carioca de estivagem de cargas</a></li>
+          <em class="posts--data">20 de novembro de 2016</em>
+          <li><a href="paginas/cases/projetos_coala.html">Coala Doces - Conceito de Doceria</a></li>
+          <em class="posts--data">20 de Julho 2016</em>
+          <br>
+          <br>
+        </ul>
+        <p class="has-text-centered" style="color: #777">blog</p>
+        <ul class="posts--blog">
+        <br>
+        <li><a href="https://medium.com/@gabrielcraveiro/como-usar-o-prepros-para-compilar-automaticamente-arquivos-scss-99f073a98cef">Como usar o prepros para compilar automaticamente arquivos .SCSS
+</a></li>
+        <em class="posts--data">13 Maio 2017</em>
+        <li><a href="https://medium.com/@gabrielcraveiro/visual-studio-code-o-editor-que-veio-para-conquistar-fcac9365ef00">Visual Studio Code, o editor que você não achava que iria precisar
+</a></li>
+        <em class="posts--data">13 Maio 2017</em>
+        </ul>
       </div>
-      <div class="columns filtro">
-        <div class="projetos__imagem column has-text-centered">
-          <a href="paginas/cases/projetos_ozeni.html"><img class="projeto--img web" src="img/thumbnails/ozeniThumb.svg" alt="Logo do projeto Ozeni Lima"></a>
-          <a href="paginas/cases/projetos_js.html"><img style="width: 220px" class="projeto--img js" src="img/thumbnails/fsThumb.svg" alt="Logo do projeto JS"></a>
-        </div>
-      </div>
-
-      <ul class="paginas--footer">
-        <li>less is more</li>
+      <!--<ul class="paginas--footer">
         <li>Gabriel Craveiro - 2017</li>
-      </ul>
+      </ul>-->
     </main>
   </div>
 
