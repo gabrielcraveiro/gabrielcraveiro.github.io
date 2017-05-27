@@ -4,7 +4,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-size: 16px;
+	font-size: 14px!important;
 }
 
 .has-text-centered {
@@ -47,7 +47,7 @@ body {
 	}
 	p {
 		font-family: "Quicksand", sans-serif;
-		font-size: 1.25rem;
+		font-size: 1.3rem;
 		font-weight: 400;
 		line-height: 1.60;
 		opacity: 0.80;
@@ -104,7 +104,7 @@ section {
 		border-bottom: 1px solid #eee!important;
 	}
 	a {
-		font-size: 1rem;
+		font-size: 1.2rem;
 		opacity: 1;
 	}
 	.lim {
@@ -117,6 +117,8 @@ section {
 
 .projetos {
 	margin-top: 30px;
+	max-width: 60rem;
+	margin: 0 auto;
 	.header {
 		font-family: 'Lato';
 		font-size: 1.7rem;
@@ -187,6 +189,14 @@ section {
 	width: 290px;
 }
 
+.titulo {
+		margin-top: 0;
+		text-align: center;
+		font-size: 2.3rem;
+		margin: 1em 0 0;
+		padding-bottom: .1em;
+}
+
 .posts {
 	margin-top: 30px!important;
 	padding-right: 5%!important;
@@ -194,7 +204,7 @@ section {
 	.posts--titulo {
 		margin-top: 0;
 		text-align: center;
-		font-size: 2.4rem;
+		font-size: 3rem;
 		margin: 1em 0 0;
 		padding-bottom: .1em;
 	}
@@ -252,13 +262,13 @@ section {
 	.posts--blog li a {
 		color: #222;
 		font-weight: 500;
-		font-size: 1.3rem;
+		font-size: 1.25rem;
 		&:hover {
 			color: firebrick;
 		}
 	}
 	.posts--data {
-		color: #aaa;
+		color: #bbb;
 		font-size: 1rem;
 	}
 	.posts--titulo--alt {
