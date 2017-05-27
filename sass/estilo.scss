@@ -87,6 +87,7 @@ section {
 .nav {
 	padding-top: 0px;
 	margin-top: 0;
+	font-weigth: 400;
 	.titulo--nav {
 		font-size: $var-1*1.5;
 	} // Itens da Nav
@@ -100,7 +101,7 @@ section {
 		border-bottom: 1px solid #eee!important;
 	}
 	a {
-		font-size: 16px;
+		font-size: 15px;
 		opacity: 1;
 	}
 	.lim {
@@ -168,9 +169,8 @@ section {
 }
 
 .icon--homepage {
-	height: 18px;
+	height: 20px;
 	cursor: pointer;
-	margin-right: 5px;
 	color: #fff;
 	transition: all 0.2s ease-in-out;
 	// float:left;
@@ -178,8 +178,20 @@ section {
 	}
 }
 
+.reset {
+	padding: 0;
+	border: none;
+	background: none;
+	height: 23px;
+}
+
+.reset--active {
+	border-bottom: 1px dashed #888;
+}
+
+button:focus {outline:0;}
+
 .icon--active {
-	border-bottom: 0.3px solid #ddd;
 }
 
 .centered {
@@ -247,6 +259,17 @@ section {
   transition: all 0.4s linear;
   -webkit-transition: all 0.4s linear;
   -moz-transition: all 0.4s linear;
+}
+
+.posts--logo {
+		font-weight: 400;
+		line-height: 1.60;
+		letter-spacing: -2px;
+		word-spacing: -0.10px;
+		margin-top: 0;
+		text-align: center;
+		font-size: 3rem;
+		margin: 1em 0 0;
 }
 
 .posts {
@@ -350,6 +373,19 @@ section {
 	&:focus {
 		outline: #333;
 	}
+}
+
+button a {
+	&:hover {
+		cursor: pointer;
+		background: #fff!important;
+		color: #333!important;
+	}
+}
+
+figcaption {
+	text-align: center;
+	text-transform: italic;
 }
 
 .btn--ativo {
