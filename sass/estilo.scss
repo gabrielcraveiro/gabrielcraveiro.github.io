@@ -104,7 +104,7 @@ section {
 		border-bottom: 1px solid #eee!important;
 	}
 	a {
-		font-size: 1.2rem;
+		font-size: 16px;
 		opacity: 1;
 	}
 	.lim {
@@ -181,6 +181,21 @@ section {
 	}
 }
 
+.icon--homepage {
+	height: 18px;
+	cursor: pointer;
+	margin-right: 5px;
+	color: #fff;
+	transition: all 0.2s ease-in-out;
+	// float:left;
+	&:hover {;
+	}
+}
+
+.icon--active {
+	border-bottom: 0.3px solid #ddd;
+}
+
 .centered {
 	margin: 0 auto;
 }
@@ -192,7 +207,7 @@ section {
 .titulo {
 		margin-top: 0;
 		text-align: center;
-		font-size: 2.3rem;
+		font-size: 2.4rem;
 		margin: 1em 0 0;
 		padding-bottom: .1em;
 }
@@ -204,7 +219,7 @@ section {
 	.posts--titulo {
 		margin-top: 0;
 		text-align: center;
-		font-size: 3rem;
+		font-size: 2.8rem;
 		margin: 1em 0 0;
 		padding-bottom: .1em;
 	}
@@ -262,7 +277,7 @@ section {
 	.posts--blog li a {
 		color: #222;
 		font-weight: 500;
-		font-size: 1.25rem;
+		font-size: 1.31rem;
 		&:hover {
 			color: firebrick;
 		}
