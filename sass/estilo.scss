@@ -186,7 +186,7 @@ section {
 }
 
 .reset--active {
-	border-bottom: 1px dashed #888;
+	border-bottom: 2px solid #ddd;
 }
 
 button:focus {outline:0;}
@@ -385,7 +385,6 @@ button a {
 
 figcaption {
 	text-align: center;
-	text-transform: italic;
 }
 
 .btn--ativo {
