@@ -1,6 +1,5 @@
-html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}[hidden],template{display:none}
 @import "var-func.scss";
-@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Quicksand');
 html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -10,6 +9,30 @@ html {
 .has-text-centered {
 	text-align: center;
 	margin: 0 auto;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 5px;
+	list-style-type: none;
+	text-align: center;
+	background-color: #000;
+}
+
+#nav ul li {
+	display: inline;
+}
+
+#nav ul li a {
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: #000;
+}
+
+#nav ul li a:hover {
+	color: #000;
+	background-color: #fff;
 }
 
 body {
@@ -22,7 +45,7 @@ body {
 	}
 	h1,
 	h2 {
-		font-family: "Lato", sans-serif;
+		font-family: "Fira Sans", sans-serif;
 		font-size: 1.5rem;
 		font-weight: 500;
 		line-height: 1.20;
@@ -34,7 +57,7 @@ body {
 		text-transform: none;
 	}
 	h3 {
-		font-family: "Lato", sans-serif;
+		font-family: "Fira Sans", sans-serif;
 		font-size: 1.4rem;
 		font-weight: 500;
 		line-height: 1.20;
@@ -73,7 +96,7 @@ body {
 }
 
 .posts--resume--conhecimento {
-	font-family: "Lato", sans-serif;
+	font-family: "Fira Sans", sans-serif;
 	font-size: 1.2rem;
 	color: #333;
 	font-weight: 500;
@@ -87,10 +110,6 @@ section {
 .nav {
 	padding-top: 0px;
 	margin-top: 0;
-	font-weigth: 400;
-	.titulo--nav {
-		font-size: $var-1*1.5;
-	} // Itens da Nav
 	.nav-item a.is-tab:hover,
 	a.nav-item.is-tab:hover {
 		border-bottom-color: $cor-2!important;
@@ -101,14 +120,9 @@ section {
 		border-bottom: 1px solid #eee!important;
 	}
 	a {
+		font-weight: 400;
 		font-size: 15px;
-		opacity: 1;
-	}
-	.lim {
-		top: 0;
-		position: absolute;
-		margin-bottom: 0!important;
-		padding-bottom: -20px;
+		opacity: 0.9;
 	}
 }
 
@@ -116,65 +130,15 @@ section {
 	margin-top: 30px;
 	max-width: 60rem;
 	margin: 0 auto;
-	.header {
-		font-family: 'Lato';
-		font-size: 1.7rem;
-		color: #555;
-	}
-	.header--profissao {
-		margin-top: 0px;
-		font-family: 'Lato';
-		font-size: 1.3rem;
-		opacity: 0.8;
-		color: #666;
-		margin-bottom: 20px;
-	}
-	.header--descricao {
-		margin-top: 40px;
-		font-size: 1.2rem;
-		font-family: 'Lato';
-		color: #999;
-		opacity: 0.9;
-		margin: 0 auto;
-		font-weight: 400;
-	}
-	.header--projeto {
-		margin-top: 40px;
-		font-size: $var-1*2.8;
-		color: $cor-2;
-	}
-	.projetos--link {
-		color: $cor-2;
-		transition: all .5s ease-in-out;
-	}
-	.projetos__pagina {
-		transition: all 1s ease-in-out;
-	}
-	.projetos--link:hover {
-		color: $cor-5;
-	}
-	.projetos__pagina--lista {
-		ul {
-			position: absolute;
-		}
-		li {
-			display: inline;
-			padding-right: 20px;
-			float: left;
-			cursor: pointer;
-			color: $cor-1;
-			bottom: 0;
-		}
-	}
 }
 
 .icon--homepage {
 	height: 20px;
 	cursor: pointer;
 	color: #fff;
-	transition: all 0.2s ease-in-out;
-	// float:left;
-	&:hover {;
+	transition: all 0.2s ease-in-out; // float:left;
+	&:hover {
+		;
 	}
 }
 
@@ -186,12 +150,11 @@ section {
 }
 
 .reset--active {
-	border-bottom: 2px solid #ddd;
+	border-bottom: 0.5px solid #777;
 }
 
-button:focus {outline:0;}
-
-.icon--active {
+button:focus {
+	outline: 0;
 }
 
 .centered {
@@ -199,34 +162,36 @@ button:focus {outline:0;}
 }
 
 .projeto--img {
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(102,102,102,0.17);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(102,102,102,0.17);
-	box-shadow: 0px 0px 5px 0px rgba(102,102,102,0.17);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(102, 102, 102, 0.17);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(102, 102, 102, 0.17);
+	box-shadow: 0px 0px 5px 0px rgba(102, 102, 102, 0.17);
 	border-bottom: 1px solid transparent;
 	transition: 0.5s ease;
 	z-index: 5;
 	margin-bottom: 30px;
+	width: 100%;
 }
+
 .projeto--img:hover {
 	cursor: pointer;
 }
 
 .hidden--text p {
-	font-family: lato;
+	font-family: Fira Sans;
 	position: absolute;
 	margin-left: -30px;
 	margin-top: 20px;
 	font-size: 0.9rem;
 	font-weight: bold;
-	color: #555;
-	// visibility: hidden;
+	color: #555; // visibility: hidden;
 	opacity: 0;
-  transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
 }
 
-.text--bottom, a {
+.text--bottom,
+a {
 	color: #888;
 	font-weight: 500;
 }
@@ -234,7 +199,7 @@ button:focus {outline:0;}
 .hidden--text:hover p {
 	opacity: 0.8;
 	visibility: visible;
-		cursor: pointer;
+	cursor: pointer;
 }
 
 .text--hover {
@@ -256,20 +221,22 @@ button:focus {outline:0;}
 
 .grid {
 	display: none;
-  transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
 }
 
 .posts--logo {
-		font-weight: 400;
-		line-height: 1.60;
-		letter-spacing: -2px;
-		word-spacing: -0.10px;
-		margin-top: 0;
-		text-align: center;
-		font-size: 3rem;
-		margin: 1em 0 0;
+	font-family: 'Fira Sans'!important;
+	color: #444;
+	font-weight: 400;
+	line-height: 1.60;
+	letter-spacing: -1px;
+	word-spacing: -0.10px;
+	margin-top: 0;
+	text-align: center;
+	font-size: 3rem;
+	margin: 1em 0 0;
 }
 
 .posts {
@@ -351,7 +318,6 @@ button:focus {outline:0;}
 	}
 }
 
-
 .btn {
 	margin-bottom: 30px;
 	margin-top: 40px;
@@ -398,7 +364,6 @@ figcaption {
 	text-align: center!important;
 }
 
-
 @media screen and (max-width: 1023px) {
 	.container {
 		width: 95vmin;
@@ -413,27 +378,6 @@ figcaption {
 		font-size: 1.1em!important;
 		margin-left: 0;
 		margin-right: -4px;
-	}
-	.header {
-		font-style: 'Quicksand';
-		font-size: 1.8em!important;
-		color: $cor-3;
-	}
-	.header--profissao {
-		opacity: 1;
-		margin-top: 0px;
-		font-size: $var-1*2.5!important;
-		color: $cor-2;
-		font-weight: 500;
-	}
-	.header--descricao {
-		margin-top: 10px;
-		font-size: $var-1*2.2!important;
-		color: $cor-1;
-		font-weight: 400;
-		text-align: justify;
-		padding-left: 5px;
-		padding-right: 5px;
 	}
 	.posts--btn {
 		width: 100px!important;
