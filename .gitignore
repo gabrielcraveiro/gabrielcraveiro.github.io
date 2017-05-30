@@ -1,4 +1,5 @@
-
+.sass-cache/
+*.css.map
 prepros-6.config
 .vscode
 *.scss
