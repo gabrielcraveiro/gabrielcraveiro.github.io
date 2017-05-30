@@ -10,16 +10,10 @@ function filtro(btnTipo, escolha, escolha2) {
   const projetos = document.querySelector('.' + escolha);
   const projetos2 = document.querySelector('.' + escolha2);
   const btnTodos = document.querySelectorAll('.reset');
-  const blog = document.querySelector('.blog');
   btnTodos.forEach(x => x.classList.remove('reset--active'));
   projetos.style.display = 'block';
   btn.classList.add('reset--active');
   projetos2.style.display = 'none';
-  if (blog.style.display === 'none') {
-    blog.style.display = 'block';
-  } else {
-    blog.style.display = 'none';
-  }
 }
 
 function main() {

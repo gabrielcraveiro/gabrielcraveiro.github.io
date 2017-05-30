@@ -5,33 +5,56 @@
     License: GPL
 -->
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta property="og:title" content="Gabriel Craveiro, Desenvolvedor Web de Santos">
-  <meta property="og:url" content="/">
-  <meta property="og:description" content="">
+  <title>Gabriel Craveiro - Web Dev</title>
+  <!-- Info site -->
+  <meta name="description" content="Desenvolvedor Front-End e Web de Santos-SP">
+  <!-- Autor -->
+  <meta name="author" content="Gabriel Craveiro" />
+  <meta name="reply-to" content="gabriel.c.craveiro@gmail.com" />
+  <!-- Linguagem-->
+  <meta name="language" content="Portuguese" />
+  <!-- Google Robots -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.gabrielcraveiro.github.io/" />
+  <meta name="theme-color" content="#fff">
+  <!-- Fav -->
+  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+  <!-- Cards Redes Sociais -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gabriel Craveiro" />
+  <meta property="og:description" content="Desenvolvedor Front-End e Web de Santos-SP" />
+  <meta property="og:url" content="https://www.gabrielcraveiro.github.io/" />
+  <meta property="og:site_name" content="Gabriel Craveiro" />
+
   <link rel="stylesheet" href="css/estilo.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" type="text/css">
 
-  <title>Gabriel Craveiro - Desenvolvedor Web de Santos</title>
+  <!-- 
+  
+  TODO: 
+  Fix Coala svg
+  Fix footer
 
-  <style>
-  </style>
+-->
+
 </head>
 
 <body>
+  <!-- Nav -->
   <nav class="nav is-fixed-top">
     <div class="container">
       <div class="nav-center nav-menu has-text-centered	">
         <a class="nav-item is-tab" href="#">Home</a>
-        <!--<a class="nav-item is-tab" href="https://www.linkedin.com/in/gabriel-craveiro-83b2b8112/">Linkedin</a>-->
         <a class="nav-item is-tab" target="_blank" href="https://github.com/gabrielcraveiro/">Github</a>
         <a class="nav-item is-tab" href="paginas/resume.html">Resume</a>
         <a class="nav-item is-tab" href="paginas/blog.html">Blog</a>
@@ -39,6 +62,7 @@
       </div>
     </div>
   </nav>
+  <!-- Body -->
   <section class="columns">
     <main class="column projetos posts">
       <h1 class="posts--logo">Gabriel Craveiro</h1>
@@ -47,29 +71,16 @@
       <div>
         <br>
         <br>
-        <p class="" style="color: #777; padding-left: 5%"><span style="font-size: 1.4rem">P</span>rojetos</p>
+        <p class="" style="color: #777; padding-left: 5%">Projetos</p>
         <div style="padding-left: 5%">
-          <button class="reset reset--active icon--text">
-          <img src="img/icons/icon-aA.svg" alt="" class="icon--homepage">
-          </button>
-          <button class="reset icon--grid">
+          <button class="reset reset--active icon--grid">
           <img src="img/icons/icon-grid.svg" alt="" class="icon--homepage">
+          </button>
+          <button class="reset icon--text">
+          <img src="img/icons/icon-aA.svg" alt="" class="icon--homepage">
           </button>
         </div>
         <br>
-        <ul class="posts--blog text">
-          <li><a href="paginas/cases/projetos_apollo.html">Apollo UX - Coletivo de desenvolvedores em Santos</a></li>
-          <em class="posts--data">Maio de 2017</em>
-          <li><a href="paginas/cases/projetos_js.html">FormSlicer.js - Biblioteca para forms multi-paginas</a></li>
-          <em class="posts--data">Maio de 2017</em>
-          <li><a href="paginas/cases/projetos_ozeni.html">Ozeni Lima - Escritora de Auto-Ajuda com livros no Brasil e Portugal</a></li>
-          <em class="posts--data">abril de 2017</em>
-          <li><a href="paginas/cases/projetos_wr.html">WR Marine Service - Empresa carioca de estivagem de cargas</a></li>
-          <em class="posts--data">novembro de 2016</em>
-          <li><a href="paginas/cases/projetos_coala.html">Coala Doces - Conceito de Doceria</a></li>
-          <em class="posts--data">julho 2016</em>
-          <br>
-        </ul>
         <div class="has-text-centered centered grid">
           <div class="hidden--text has-text-left">
             <p><span class="text--hover">Apollo UX</span>
@@ -86,6 +97,12 @@
             <a href="paginas/cases/projetos_js.html"><img style="" class="projeto--img js" src="img/thumbnails/fsThumb.svg" alt="Logo do projeto JS"></a>
           </div>
           <div class="hidden--text has-text-left">
+            <p><span class="text--hover">Ozeni Lima</span> <br> [ Wordpress / Blog ]
+              <br><a style="transition: none" href="ppaginas/cases/projetos_coala.html">[ Case ]</a>
+            </p>
+            <a href="paginas/cases/projetos_coala.html"><img class="projeto--img logo" src="img/thumbnails/ozeniThumb.svg" alt="Logo do projeto Ozeni Lima"></a>
+          </div>
+          <div class="hidden--text has-text-left">
             <p><span class="text--hover">WR Marine Service</span> <br> [ Logo / Site / Identidade Visual ]
               <br><a style="transition: none" href="paginas/cases/projetos_wr.html">[ Case ]</a>
             </p>
@@ -98,11 +115,20 @@
             </p>
             <a href="paginas/cases/projetos_coala.html"><img class="projeto--img logo" src="img/thumbnails/coalaThumb.svg" alt="Logo do projeto Coala Doces"></a>
           </div>
-          <!--<a href="paginas/cases/projetos_ozeni.html"><img class="projeto--img web" src="img/thumbnails/ozeniThumb.svg" alt="Logo do projeto Ozeni Lima"></a>-->
         </div>
-        <br>
-
-        <ul class="posts--blog blog">
+        <ul class="posts--blog text">
+          <li><a href="paginas/cases/projetos_apollo.html">Apollo UX - Coletivo de desenvolvedores em Santos</a></li>
+          <em class="posts--data">Maio de 2017</em>
+          <li><a href="paginas/cases/projetos_js.html">FormSlicer.js - Biblioteca para forms multi-paginas</a></li>
+          <em class="posts--data">Maio de 2017</em>
+          <li><a href="paginas/cases/projetos_ozeni.html">Ozeni Lima - Escritora de Auto-Ajuda com livros no Brasil e Portugal</a></li>
+          <em class="posts--data">abril de 2017</em>
+          <li><a href="paginas/cases/projetos_wr.html">WR Marine Service - Empresa carioca de estivagem de cargas</a></li>
+          <em class="posts--data">novembro de 2016</em>
+          <li><a href="paginas/cases/projetos_coala.html">Coala Doces - Conceito de Doceria</a></li>
+          <em class="posts--data">julho 2016</em>
+          <br>
+          <br>
           <p class="" style="color: #777">Meu blog</p>
           <li>
             <a href="https://medium.com/@gabrielcraveiro/como-usar-o-prepros-para-compilar-automaticamente-arquivos-scss-99f073a98cef">Como usar o prepros para compilar automaticamente arquivos .SCSS</a>
@@ -121,7 +147,6 @@
       </footer>
     </main>
   </section>
-
   <script src="js/script.js"></script>
 </body>
 
