@@ -18,15 +18,16 @@ function filtro(btnTipo, escolha, escolha2) {
 
 function main() {
   // 1
-  'use strict';
-  document.getElementsByClassName('icon--text')[0].addEventListener('click', function () {
-    filtro('icon--text', 'text', 'grid');
-  });
-  document.getElementsByClassName('icon--grid')[0].addEventListener('click', function () {
-    filtro('icon--grid', 'grid', 'text');
-  });
+  document
+    .getElementsByClassName('icon--text')[0]
+    .addEventListener('click', function() {
+      filtro('icon--text', 'text', 'grid');
+    });
+  document
+    .getElementsByClassName('icon--grid')[0]
+    .addEventListener('click', function() {
+      filtro('icon--grid', 'grid', 'text');
+    });
 }
-
-
 
 window.onload = main;
