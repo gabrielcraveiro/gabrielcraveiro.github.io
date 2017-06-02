@@ -14,6 +14,7 @@ function filtro(btnTipo, escolha, escolha2) {
   projetos.style.display = 'block';
   btn.classList.add('reset--active');
   projetos2.style.display = 'none';
+  
 }
 
 function main() {
