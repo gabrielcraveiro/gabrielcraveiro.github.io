@@ -81,11 +81,22 @@
   <!-- Body -->
   <section class="columns">
     <main class="column projetos posts">
-      <h1 class="posts--logo">Gabriel Craveiro</h1>
-      <p class="has-text-centered" style="color: #777">Desenvolvedor Web - Santos</p>
-      <br>
-      <div>
+      <div itemscope itemprop="author" itemtype="http://schema.org/Person">
+        <h1 class="posts--logo">
+          <link itemprop="url" href="https://gabrielcraveiro.github.io/" rel="author" />
+          <span itemprop="name" style="display:block;">Gabriel Craveiro</span></h1>
+        <p class="has-text-centered" style="color: #777"><span  itemprop="jobtitle">Desenvolvedor Web</span> - <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> <span itemprop="addressLocality">Santos</span></span></p>
         <br>
+        <div>
+          <br>
+          <p>
+            <meta itemprop="description" content="Aluno de Sistemas para Internet da FATEC em Santos, sou um programador com uma inclinação por programação funcional, interfaces limpas e design gráfico. No meu tempo livre costumo passar publicando projetos no meu Github, lendo livros ou publicando no meu Twitter. "> Aluno de Sistemas para Internet da FATEC em Santos, sou um programador com uma inclinação por programação funcional,
+            interfaces limpas e design gráfico. No meu tempo livre costumo passar publicando projetos no meu <a href="https://github.com/gabrielcraveiro/">Github</a>,
+            lendo <a href="https://www.goodreads.com/user/show/33973446-gabriel-cruz">livros</a> ou publicando no meu
+            <a href="https://twitter.com/meiasestileiras">Twitter</a>.
+          </p>
+        </div>
+
         <br>
         <div style="padding-left: 5%">
           <button class="reset reset--active icon--grid">
@@ -97,7 +108,7 @@
         </div>
         <br>
         <div class="has-text-centered centered grid">
-          <div class="hidden--text has-text-left">
+          <div class="hidden--text has-text-left" style="padding: 0!important">
             <p><span class="text--hover">Apollo UX</span>
               <br>[ Coletivo de desenvolvedores / Agência em Santos]
               <br><a style="transition: none" href="paginas/cases/projetos_apollo.html">[ Case ]</a>
@@ -133,20 +144,7 @@
         </div>
         <ul class="posts--blog text">
 
-          <p style="margin-top: 0; font-size: 1.5rem; color: #555; font-style: 'Fira Sans';font-weight: 500; margin-bottom: 15px">Sobre</p>
-          <p>
-            Aluno do curso de Sistemas para Internet da FATEC-RL, sou um programador com uma inclinação por programação funcional, interfaces
-            limpas e design gráfico. No meu tempo livre costumo passar publicando projetos no meu <a href="https://github.com/gabrielcraveiro/">Github</a>,
-            lendo <a href="https://www.goodreads.com/user/show/33973446-gabriel-cruz">livros</a> ou publicando no meu
-            <a href="https://twitter.com/meiasestileiras">Twitter</a>.
-            <br>
-            <br>Tive a oportunidade de criar e colaborar com a
-            <a href="http://www.apolloux.com.br">Apollo UX</a>, onde realizo o serviço de freelancer, fazendo SEO, criação
-            de layouts e desenvolvimento web. Estou atualmente procurando oportunidades onde possa realizar estágio.
-          </p>
-
           <p class="" style="color: #555; font-size: 1.5rem; font-style: 'Fira Sans';font-weight: 500;margin-bottom: 15px">Projetos</p>
-
           <li><a href="paginas/cases/projetos_apollo.html">Apollo UX - Coletivo de desenvolvedores em Santos</a>
             <br> <em class="posts--data">Maio de 2017</em></li>
           <li><a href="https://apollo-ux.github.io/FormSlicer/src/" target="_blank">FormSlicer.js - Biblioteca para forms multi-paginas</a>
