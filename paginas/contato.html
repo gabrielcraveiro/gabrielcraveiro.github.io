@@ -30,6 +30,55 @@
   <link rel="stylesheet" href="../css/estilo.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
 
+  <style>
+    fieldset {
+      border: none;
+    }
+
+
+    body {}
+
+    form {
+    }
+
+    .feedback-input {
+      border: none;
+      color: #555;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      background-color: transparent;
+      border-bottom: 2px solid #888;
+      transition: all 0.3s;
+      padding: 10px;
+      margin-bottom: 16px;
+      width: 100%;
+      box-sizing: border-box;
+      outline: 0;
+    }
+
+    textarea {
+      height: 150px;
+      line-height: 150%;
+      resize: vertical;
+    }
+
+    [type="submit"] {
+      width: 30%;
+      background: #556270;
+      border-radius: 5px;
+      border: 0;
+      cursor: pointer;
+      color: #ddd;
+      font-size: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      transition: all 0.3s;
+      margin-top: 20px;
+      font-weight: 700;
+    }
+  </style>
+
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -66,54 +115,31 @@
   <!-- Body -->
   <div class="columns">
     <main class="column projetos posts">
-      <h1 class="posts--titulo">Currículo</h1>
-      <p class="has-text-centered" style="color: #777">Atualizado 05 - 2017</p>
+      <h1 class="posts--titulo">Entre em contato!</h1>
+      <br>
+      <br>
       <div class="has-text-centered">
+        <p class="has-text-left">Gostaria de me fazer uma pergunta, saber mais informações ou talvez conversar sobre um projeto? Você pode usar o
+          formulário abaixo ou clicar para mandar um email para <a href="mailto:gabriel.c.craveiro@gmail.com">gabriel.c.craveiro@gmail.com</a>.
+          Vou responder o mais breve possível!</p>
         <br>
-        <a href="arquivos/Curriculo-Gabriel-Craveiro.pdf"><button class="btn resume--btn">PDF</button></a>
-        <a href="https://www.linkedin.com/in/gabriel-craveiro-83b2b8112/"><button class="btn resume--btn">Linkedin</button></a>
-        <!--<a href="arquivos/Curriculo-Gabriel-Craveiro.pdf"><button class="btn resume--btn">Linkedin</button></a>-->
-      </div>
-      <div class="posts--resume">
-        <h1>Gabriel Craveiro</h1>
-        <p>20 anos - Santos, SP
-          <br>
-          <a href="mailto:gabriel.c.craveiro@gmail.com">gabriel.c.craveiro@gmail.com</a>
+        <form id="contactform" method="POST">
+          <input type="text" name="name" class="feedback-input" placeholder="Seu nome">
+          <input type="email" name="_replyto" class="feedback-input" placeholder="Seu email">
+          <input type="hidden" name="_subject" value="Contato do meu portfolio" />
+          <textarea name="message" class="feedback-input" placeholder="Sua mensagem"></textarea>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="submit" value="Send">
+        </form>
 
-        </p>
-        <p>
-          Aluno do curso de Sistemas para Internet da FATEC-RL, sou um programador com uma inclinação por programação funcional, interfaces
-          limpas e design gráfico. No meu tempo livre costumo passar publicando projetos no meu
-          <a href="https://github.com/gabrielcraveiro/">Github</a>, lendo <a href="https://www.goodreads.com/user/show/33973446-gabriel-cruz">livros</a>          ou publicando no meu <a href="https://twitter.com/meiasestileiras">Twitter</a>.
-          <br>Tive a oportunidade de criar e colaborar com a
-          <a href="http://www.apolloux.com.br">Apollo UX</a>, onde realizo o serviço de freelancer, fazendo SEO, criação
-          de layouts e desenvolvimento web. Estou atualmente procurando oportunidades onde possa realizar estágio.
-        </p>
-        <h3>Conhecimentos</h3>
-        <ul>
-          <li>• <span class="posts--resume--conhecimento">Desenvolvimento Web:</span> Javascript (ES6), HTML/CSS (bem, oocss)
-            e SASS
-          </li>
-          <li>• <span class="posts--resume--conhecimento">Tecnologias:</span> Wordpress, Bootstrap 4, SemanticUI, Jquery, Jekyll
-            e Hugo
-          </li>
-          <li>• <span class="posts--resume--conhecimento">Software/Ferramentas:</span> Git, Bash, VSCode, Grunt, Prepros, Node
-            e Eslint
-          </li>
-          <li>• <span class="posts--resume--conhecimento">Design Gráfico:</span> Illustrator, Indesign, Experience Design e Affinity
-            Design
-          </li>
-          <li>• Experiência com Scrum e Programação Funcional aplicada a Javascript
-          </li>
-        </ul>
-        <h3>Idiomas
-        </h3>
-        <p>• Inglês: fluente</p>
-        <h3>Formação Acadêmica</h3>
-        <p>• <span class="posts--resume--conhecimento">FATEC Rubens Lara </span>- Superior em Sistemas para Internet
-          <span style="float:right!important">01/2016-12/2018</span>
-        </p>
+
+        <script>
+          var contactform = document.getElementById('contactform');
+          contactform.setAttribute('action', '//formspree.io/' + 'gabriel.c.craveiro' + '@' + 'email' + '.' + 'com');
+        </script>
+
       </div>
+
       <br>
       <div class="has-text-center">
         <ul class="footer--social">
