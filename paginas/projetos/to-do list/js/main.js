@@ -13,6 +13,8 @@ $('ul').on('click', 'span', function (event) {
   event.stopPropagation();
 })
 
+// Inserir item
+
 $("input[type='text'").keypress(function (event) {
   if (event.which === 13) {
     // Pegar texto do input

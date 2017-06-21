@@ -76,7 +76,7 @@ input:focus {
 	outline: none;
 }
 
-#container {
+#card {
 	width: 360px;
 	margin: 100px auto;
 	background: #f7f7f7;
