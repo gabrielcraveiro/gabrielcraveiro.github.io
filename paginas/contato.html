@@ -76,6 +76,11 @@
       margin-top: 20px;
       font-weight: 700;
     }
+
+    [type="submit"]:hover {
+      background: #eee;
+      color: #556270;
+    }
   </style>
 
   <script>
@@ -104,7 +109,7 @@
       <div class="nav-center nav-menu has-text-centered	">
         <a class="nav-item is-tab" href="../index.html">Home</a>
         <!--<a class="nav-item is-tab" href="https://www.linkedin.com/in/gabriel-craveiro-83b2b8112/">Linkedin</a>-->
-        <a class="nav-item is-tab" target="_blank" href="https://github.com/gabrielcraveiro/">Github</a>
+        <!--<a class="nav-item is-tab" target="_blank" href="https://github.com/gabrielcraveiro/">Github</a>-->
         <a class="nav-item is-tab" href="resume.html">Currículo</a>
         <a class="nav-item is-tab" href="blog.html">Blog</a>
         <a class="nav-item is-tab" href="contato.html">Contato</a>
@@ -115,6 +120,9 @@
   <div class="columns">
     <main class="column projetos posts">
       <h1 class="posts--titulo">Entre em contato!</h1>
+      <p class="has-text-centered">
+        <img src="../img/icons/mail.svg" style="opacity: 0.8">
+      </p>
       <br>
       <br>
       <div class="has-text-centered">
@@ -128,7 +136,7 @@
           <input type="hidden" name="_subject" value="Contato do meu portfolio" />
           <textarea name="message" class="feedback-input" placeholder="Sua mensagem"></textarea>
           <input type="text" name="_gotcha" style="display:none" />
-          <input type="submit" value="Send">
+          <input type="submit" value="Enviar">
         </form>
       </div>
 
