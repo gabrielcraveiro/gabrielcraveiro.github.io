@@ -28,15 +28,62 @@
 
     h1 {
       color: white;
-      font-size: 120%;
+      font-size: 130%;
+      font-weight:
     }
 
     ul li {
       display: inline-block;
       color: white;
       opacity: 0.7;
-      font-size: 20px
-      text-transform: lowercase;
+      font-size: 20px text-transform: lowercase;
+    }
+    /*
+    .txt-rotate>.wrap {
+      border-right: 0.08em solid #fff
+    }*/
+
+    .txt-rotate>.wrap {
+      opacity: 1;
+      -webkit-animation: blink 1s infinite;
+      -moz-animation: blink 1s infinite;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% {
+        border-right: 0.08em solid #fff;
+      }
+      50% {
+        border-right: 0.08em solid transparent;
+      }
+      100% {
+        border-right: 0.08em solid #fff;
+      }
+    }
+
+    @-webkit-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
   </style>
 </head>
@@ -66,6 +113,8 @@
     </nav>
     <div class="logo has-text-centered">
       <img src="apolloReimaginado.svg" alt="" style="margin-top: 30vh; width: 6%" />
+      <div id="particles-js"></div>
+
       <!--<ul>
         <li>Web Design | </li>
         <li>Design Responsivo | </li>
@@ -75,6 +124,7 @@
 
     </div>
   </header>
+
   <script>
     var TxtRotate = function (el, toRotate, period) {
       this.toRotate = toRotate;
@@ -96,10 +146,10 @@
         this.txt = fullTxt.substring(0, this.txt.length + 1);
       }
 
-      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+      this.el.innerHTML = '<span class="wrap">' + this.txt + ' </span>';
 
       var that = this;
-      var delta = 200 - Math.random() * 100;
+      var delta = 150 - Math.random() * 100;
 
       if (this.isDeleting) {
         delta /= 2;
@@ -128,11 +178,6 @@
           new TxtRotate(elements[i], JSON.parse(toRotate), period);
         }
       }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #fff }";
-      document.body.appendChild(css);
     };
   </script>
 </body>
