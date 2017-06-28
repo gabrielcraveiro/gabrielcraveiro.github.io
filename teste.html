@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Quicksand:200,100,400" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      font-family: Quicksand;
+    }
+    header {
+      width: 100%;
+      height: 100vh;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      background: #FF714C;
+    }
+
+    h1 {
+      color: white;
+      font-size: 130%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav has-shadow">
+      <div class="container">
+        <div class="nav-left">
+          <a class="nav-item">
+            <h1 style="color: #666">Apollo UX</h1>
+          </a>
+        </div>
+        <span class="nav-toggle">
+      <span></span>
+        <span></span>
+        <span></span>
+        </span>
+        <div class="nav-right nav-menu">
+          <a class="nav-item is-tab is-hidden-mobile">Sobre Nós</a>
+          <a class="nav-item is-tab is-hidden-mobile">Portfólio</a>
+          <a class="nav-item is-tab is-hidden-mobile">Serviços</a>  
+          <a class="nav-item is-tab is-hidden-mobile">Carreira</a>  
+          <a class="nav-item is-tab is-hidden-mobile">Contato</a>  
+        </div>
+      </div>
+    </nav>
+    <div class="logo has-text-centered">
+      <img src="apolloReimaginado.svg" alt="" style="margin-top: 30vh; width: 8%" />
+      <h1>Nós solucionamos problemas<br> digitais e geramos <br> <span class="txt-rotate" data-period="2000" data-rotate='[ "valor.", "audiência.", "vendas.", "clientes.", "diversão!" ]'></span></h1>
+
+    </div>
+  </header>
+  <script>
+    var TxtRotate = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) {
+        delta /= 2;
+      }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #fff }";
+      document.body.appendChild(css);
+    };
+  </script>
+</body>
+
+</html>
