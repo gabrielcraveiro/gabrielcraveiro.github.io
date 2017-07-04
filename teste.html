@@ -35,9 +35,7 @@
       vertical-align: bottom;
     }
 
-    #bg {
-
-    }
+    #bg {}
 
 
     h1 {
@@ -62,17 +60,18 @@
       -webkit-animation: blink 1s infinite;
       -moz-animation: blink 1s infinite;
       animation: blink 1s infinite;
+      line-height: 80%;
     }
 
     @keyframes blink {
       0% {
-        border-right: 0.08em solid #fff;
+        border-bottom: 0.08em solid #fff;
       }
       50% {
-        border-right: 0.08em solid transparent;
+        border-bottom: 0.08em solid transparent;
       }
       100% {
-        border-right: 0.08em solid #fff;
+        border-bottom: 0.08em solid #fff;
       }
     }
 
@@ -137,7 +136,7 @@
         <li>Design Responsivo | </li>
         <li>SEO</li>
       </ul>-->
-      <h1>Nós solucionamos problemas<br> digitais e geramos <br> <span class="txt-rotate" data-period="2000" data-rotate='[ "valor.", "audiência.", "vendas.", "clientes.", "diversão!" ]'></span></h1>
+      <h1>Nós solucionamos problemas<br> digitais e geramos <br> <span class="txt-rotate" data-period="2000" data-rotate='[ "valor.", "audiência.","clientes.", "gosto por comida mexicana.", "lucros!" ]'></span></h1>
 
     </div>
   </header>
@@ -163,7 +162,8 @@
         this.txt = fullTxt.substring(0, this.txt.length + 1);
       }
 
-      this.el.innerHTML = '<span class="wrap">' + this.txt + ' </span>';
+      this.el.innerHTML = this.txt + '<span class="wrap">' + 
+'&nbsp;&nbsp;' + '</span>';
 
       var that = this;
       var delta = 150 - Math.random() * 100;
@@ -202,7 +202,7 @@
     particlesJS("bg", {
       "particles": {
         "number": {
-          "value":110,
+          "value": 110,
           "density": {
             "enable": true,
             "value_area": 315
