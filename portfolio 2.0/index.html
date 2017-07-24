@@ -195,16 +195,17 @@
           <h2>PORTFOLIO</h2>
         </div>
       </div>
+
       <!-- PROJECTS  -->
 
       <div class="card columns portfolio-project">
-        <div class="column is-half project-image">
-          <span style="font-family: Monad;font-size: 20px; color: white">01. </span>
-          <img src="img/project-apollo.svg" alt="">
+        <div data-tilt class="js-tilt column is-half project-image">
+          <!-- <span style="font-family: Monad;font-size: 20px; color: white">01. </span> -->
+          <img class="" src="img/project-apollo.svg" alt="">
         </div>
         <div class="column is-half project-description">
-          <h3>Project Name</h3>
-          <h4>Project Subtitle</h4>
+          <h3>PROJECT NAME</h3>
+          <!-- <h4>Project Subtitle</h4> -->
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum perspiciatis, aliquid culpa voluptates obcaecati
             officia laudantium illo qui cupiditate fuga!</p>
           <ul>
@@ -218,12 +219,15 @@
           </div>
         </div>
       </div>
+
+
+
     </section>
   </main>
 
-
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
   <script>
     $(".aba div").on('click', function () {
       if ($('aba-resume').hasClass('aba-ativa')) {
@@ -240,6 +244,14 @@
         console.log('xau');
       }
     });
+
+    const tilt = $('.js-tilt').tilt();
+
+    $('.js-tilt').tilt({
+      maxTilt: 20,
+      perspective: 1000,
+      scale: 1.1
+    })
   </script>
 
 </body>
