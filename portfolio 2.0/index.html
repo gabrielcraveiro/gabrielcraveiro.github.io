@@ -61,8 +61,10 @@
 
 <body>
 
-  <div class="stars"></div>
 
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
   <main>
 
     <div class="columns">
@@ -79,24 +81,36 @@
     </div>
     <div class="columns">
       <header class="column">
+        <!-- TITLE  -->
         <h1>Gabriel Craveiro</h1>
         <h2>Creative Developer</h2>
+
+        <!-- TERMINAL  -->
+
         <div class="card">
           <div class="top">
             <div class="botoes-header verde"></div>
             <div class="botoes-header vermelho"></div>
             <div class="botoes-header amarelo"></div>
+            <!-- <div class="botoes-header exit">x</div> -->
           </div>
-          <div>
+          <div class="aba">
+            <div class="aba-person aba-ativa">person.js</div>
+            <div class="aba-resume aba-inativa">resume</div>
+          </div>
+
+          <!-- Person.JS  -->
+
+          <div class="terminal-personjs">
             <div class="infoTerminal">
               <div class="call-infoTerminal">> Gabriel.currentLocation</div>
-              <div class="answer-infoTerminal">"Santos - SP, Brazil"</div>
+              <div class="answer-infoTerminal">"Santos, São Paulo, Brazil"</div>
             </div>
             <div class="infoTerminal">
               <div class="call-infoTerminal">> Gabriel.contactInfo</div>
               <div class="answer-infoTerminal">["<a href="mailto:gabriel.c.craveiro@gmail.com">gabriel.c.craveiro@gmail.com</a>", "<a href="linkedin.com/in/gabriel-craveiro-83b2b8112/">LinkedIn</a>",
                 "
-                <a href="https://github.com/gabrielcraveiro/">github</a>"]</div>
+                <a href="https://github.com/gabrielcraveiro/">GitHub</a>"]</div>
             </div>
             <div class="infoTerminal">
               <div class="call-infoTerminal">> Gabriel.resume</div>
@@ -104,25 +118,76 @@
             </div>
             <div class="infoTerminal">
               <div class="call-infoTerminal">> Gabriel.interests</div>
-              <div class="answer-infoTerminal">["design", "functional programming", "cooking", "cycling"]</div>
+              <div class="answer-infoTerminal">["Design", "Functional Programming", "Cooking", "Cycling"]</div>
             </div>
             <div class="infoTerminal">
               <div class="call-infoTerminal">> Gabriel.education</div>
-              <div class="answer-infoTerminal">"Sistemas para Internet - FATEC-RL - 2016 - 12/2018"</div>
+              <div class="answer-infoTerminal">"FATEC Rubens Lara - Superior em Sistemas para Internet 01/2016-12/2018"</div>
             </div>
             <div class="infoTerminal">
-              <div class="call-infoTerminal">> Gabriel.skills</div>
-              <div class="answer-infoTerminal">["HTML5", "CSS3", "Sass", "JavaScript", "ReactJS", "webpack", "git", "Adobe Suit", "Processing"]</div>
+              <div class="call-infoTerminal">> Gabriel.webSkills</div>
+              <div class="answer-infoTerminal">["HTML5", "CSS3", "Sass", "JavaScript (ES6)", "ReactJS", "Adobe Suit" , "Wordpress", "Bootstrap", "Jekyll",
+                "Jquery"]
+              </div>
+            </div>
+            <div class="infoTerminal">
+              <div class="call-infoTerminal">> Gabriel.softwarePreferences</div>
+              <div class="answer-infoTerminal">["Git", "Bash", "VSCode", "Grunt", "Prepros / Koala", "Node" and "Eslint"]</div>
             </div>
             <div class="infoTerminal">
               <div class="call-infoTerminal">> Gabriel.currentStatus</div>
               <div class="answer-infoTerminal">Looking for an internship</div>
             </div>
             <div class="infoTerminal">
-              <div class="input-infoTerminal pisca-infoTerminal">> <span>|</span></div>
+              <div class="input-infoTerminal pisca-infoTerminal">> <span> </span></div>
             </div>
           </div>
+
+          <!-- Resume JS  -->
+
+          <div class="terminal-resume">
+
+            <h2>Gabriel Craveiro</h2>
+            <p>20 anos - Santos, SP
+              <br>
+              <a href="mailto:gabriel.c.craveiro@gmail.com">gabriel.c.craveiro@gmail.com</a>
+            </p>
+            <p>
+              Aluno do curso de Sistemas para Internet da FATEC-RL, sou um programador com uma inclinação por programação funcional, interfaces
+              limpas e design gráfico. No meu tempo livre costumo passar publicando projetos no meu
+              <a href="https://github.com/gabrielcraveiro/">Github</a>, lendo <a href="https://www.goodreads.com/user/show/33973446-gabriel-cruz">livros</a>              ou publicando no meu <a href="https://twitter.com/meiasestileiras">Twitter</a>.
+              <br>Tive a oportunidade de criar e colaborar com a
+              <a href="http://www.apolloux.com.br">Apollo UX</a>, onde realizo o serviço de freelancer, fazendo SEO, criação
+              de layouts e desenvolvimento web. Também faço parte da equipe de desenvolvedores da FATEC, realizando o serviço
+              de front para sites da instituição. Estou atualmente procurando oportunidades onde possa realizar estágio.
+            </p>
+            <h3>Conhecimentos</h3>
+            <ul class="resume-title">
+              <li>• <span class="resume-conhecimento">Desenvolvimento Web:</span> Javascript (ES6), HTML/CSS (bem, oocss) e SASS
+              </li>
+              <li>• <span class="resume-conhecimento">Tecnologias:</span> Wordpress, Bootstrap 4, SemanticUI, Jquery, Jekyll
+                e Hugo
+              </li>
+              <li>• <span class="resume-conhecimento">Software/Ferramentas:</span> Git, Bash, VSCode, Grunt, Prepros, Node e
+                Eslint
+              </li>
+              <li>• <span class="resume-conhecimento">Design Gráfico:</span> Illustrator, Indesign, Experience Design e Affinity
+                Design
+              </li>
+              <li>• Experiência com Scrum e Programação Funcional aplicada a Javascript
+              </li>
+            </ul>
+            <h3>Idiomas
+            </h3>
+            <p>• Inglês: avançado</p>
+            <h3>Formação Acadêmica</h3>
+            <p>• <span class="resume-conhecimento">FATEC Rubens Lara </span>- Superior em Sistemas para Internet
+              <span style="float:right!important">01/2016-12/2018</span>
+            </p>
+          </div>
+
         </div>
+        <!-- /TERMINAL  -->
       </header>
     </div>
   </main>
@@ -131,26 +196,21 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
   <script>
-    $(document).ready(function () {
-      var stars = 800;
-      var $stars = $(".stars");
-      var r = 800;
-      for (var i = 0; i < stars; i++) {
-        var $star = $("<div/>").addClass("star");
-        $stars.append($star);
+    $(".aba div").on('click', function () {
+      if ($('aba-resume').hasClass('aba-ativa')) {
+        $('.aba-resume').toggleClass('aba-ativa').toggleClass('aba-inativa');
+        $('.aba-person').toggleClass('aba-ativa').toggleClass('aba-inativa');
+        $('.terminal-personjs').toggle();
+        $('.terminal-resume').toggle();
+        console.log('oi');
+      } else {
+        $('.aba-person').toggleClass('aba-ativa').toggleClass('aba-inativa');
+        $('.aba-resume').toggleClass('aba-ativa').toggleClass('aba-inativa');
+        $('.terminal-resume').toggle();
+        $('.terminal-personjs').toggle();
+        console.log('xau');
       }
-      $(".star").each(function () {
-        var cur = $(this);
-        var s = 0.2 + (Math.random() * 1);
-        var curR = r + (Math.random() * 300);
-        cur.css({
-          transformOrigin: "0 0 " + curR + "px",
-          transform: " translate3d(0,0,-" + curR + "px) rotateY(" + (Math.random() * 360) + "deg) rotateX(" +
-            (Math.random() * -50) + "deg) scale(" + s + "," + s + ")"
-
-        })
-      })
-    })
+    });
   </script>
 
 </body>
