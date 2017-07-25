@@ -209,11 +209,11 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum perspiciatis, aliquid culpa voluptates obcaecati
             officia laudantium illo qui cupiditate fuga!</p>
           <ul>
-            <li><span class="dsd">Role:</span> FrontEnd | Designer</li>
-            <li><span class="dsd">Context:</span> Freelancer</li>
-            <li><span class="dsd">Year:</span> 2017</li>
+            <li><span class="description-context">Role:</span> FrontEnd | Designer</li>
+            <li><span class="description-context">Context:</span> Freelancer</li>
+            <li><span class="description-context">Year:</span> 2017</li>
           </ul>
-          <div class="project-button">
+          <div class="project-button nan">
             <a href="" class="">DEMO</a>
             <a href="" class="">SOURCE CODE</a>
           </div>
@@ -230,9 +230,9 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum perspiciatis, aliquid culpa voluptates obcaecati
             officia laudantium illo qui cupiditate fuga!</p>
           <ul>
-            <li><span class="dsd">Role:</span> FrontEnd | Designer</li>
-            <li><span class="dsd">Context:</span> Freelancer</li>
-            <li><span class="dsd">Year:</span> 2017</li>
+            <li><span class="description-context">Role:</span> FrontEnd | Designer</li>
+            <li><span class="description-context">Context:</span> Freelancer</li>
+            <li><span class="description-context">Year:</span> 2017</li>
           </ul>
           <div class="project-button">
             <a href="" class="">DEMO</a>
@@ -243,7 +243,7 @@
       <div class="card columns portfolio-project">
         <div data-tilt class="js-tilt column is-half project-image">
           <!-- <span style="font-family: Monad;font-size: 20px; color: white">01. </span> -->
-          <img class="" src="img/project-apollo.svg" alt="">
+          <img class="" src="img/wrThumb.svg" alt="">
         </div>
         <div class="column is-half project-description">
           <h3>PROJECT NAME</h3>
@@ -251,9 +251,9 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum perspiciatis, aliquid culpa voluptates obcaecati
             officia laudantium illo qui cupiditate fuga!</p>
           <ul>
-            <li><span class="dsd">Role:</span> FrontEnd | Designer</li>
-            <li><span class="dsd">Context:</span> Freelancer</li>
-            <li><span class="dsd">Year:</span> 2017</li>
+            <li><span class="description-context">Role:</span> FrontEnd | Designer</li>
+            <li><span class="description-context">Context:</span> Freelancer</li>
+            <li><span class="description-context">Year:</span> 2017</li>
           </ul>
           <div class="project-button">
             <a href="" class="">DEMO</a>
@@ -261,6 +261,42 @@
           </div>
         </div>
       </div>
+
+      <!-- OTHER PROJECTS  -->
+
+      <div class="columns">
+        <div class="column is-12">
+          <h2 class="section-h2">OTHER PROJECTS</h2>
+          <p class="section-p">Projects I made for hobby including design, code and wireframing</p>
+        </div>
+      </div>
+      <div class="card columns project-others project-others-nomarginbt">
+        <span class="others-title">> Wordpress</span>
+        <div class="column is-6">
+          <img src="https://gabrielcraveiro.github.io/img/thumbnails/ozeniThumb.svg">
+        </div>
+        <div class="column is-6">
+          <img src="img/duiThumb.svg">
+        </div>
+        <!-- <div class="project-button">
+          <a href="" class="">CHECK</a>
+        </div> -->
+      </div>
+      <div class="card columns project-others project-others-nomargintp">
+        <span class="others-title">> Design / Branding</span>
+        <div class="column is-6">
+          <img src="https://gabrielcraveiro.github.io/img/thumbnails/ozeniThumb.svg">
+        </div>
+        <div class="column is-6">
+          <img src="img/duiThumb.svg">
+        </div>
+        <!-- <div class="project-button">
+          <a href="" class="">CHECK</a>
+        </div> -->
+      </div>
+
+
+
 
       <!-- Daily UI  -->
       <!-- 
@@ -316,7 +352,16 @@
     $('.js-tilt').tilt({
       maxTilt: 20,
       perspective: 1000,
-      scale: 1.1
+      scale: 1.3
+    })
+
+    const tilt2 = $('.js-tilt2').tilt();
+
+    $('.js-tilt2').tilt({
+      maxTilt: 0,
+      perspective: 1000,
+      scale: 1.2,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
     })
   </script>
 
