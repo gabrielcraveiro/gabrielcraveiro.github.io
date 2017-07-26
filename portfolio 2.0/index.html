@@ -314,22 +314,45 @@
           <div class="botoes-header amarelo"></div>
         </div>
         <div class="columns">
-          <div class="column is-6"></div>
-          <div class="terminal-contact column is-6">
-            <form>
+          <div class="terminal-contact column is-12">
+            <form id="contactform" method="POST">
               <input name="name" type="text" class="feedback-input" placeholder="Name" />
-              <input name="email" type="text" class="feedback-input" placeholder="Email" />
-              <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-              <input type="submit" value="LAUNCH" />
+              <input name="_replyto" type="text" class="feedback-input" placeholder="Email" />
+              <input name="_subject" type="text" class="feedback-input" placeholder="Subject" />
+              <textarea name="message" class="feedback-input" placeholder="Message"></textarea>
+              <input type="text" name="_gotcha" style="display:none" />
+              <div class="has-text-centered	">
+                <input type="submit" value="LAUNCH" />
+              </div>
             </form>
+            <!-- <ul class="has-text-centered">
+              <li><a href="https://www.github.com/gabrielcraveiro" target="_Blank" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <li><a href="https://linkedin.com/in/gabriel-craveiro-83b2b8112/" target="_Blank" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="mailto:gabriel.c.craveiro@gmail.com" target="_Blank" title="Email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+            </ul> -->
           </div>
         </div>
       </div>
-
     </section>
+
+    <footer>
+      <div class="columns">
+        <div class="column has-text-center ">
+          <ul>
+            <li><a href="https://www.github.com/gabrielcraveiro" target="_Blank" title="GitHub"><img src="img/icons/github.svg"></a></li>
+            <li><a href="https://linkedin.com/in/gabriel-craveiro-83b2b8112/" target="_Blank" title="Linkedin"><img src="img/icons/linkedin.svg"></a></li>
+            <li><a href="https://twitter.com/meiasestileiras" target="_Blank" title="Twitter"><img src="img/icons/twitter.svg"></a></li>
+            <li><a href="mailto:gabriel.c.craveiro@gmail.com" target="_Blank" title="Email"><img src="img/icons/mail.svg"></a></li>
+          </ul>
+          Designed and developed by <br> Gabriel Craveiro - 2017
+        </div>
+      </div>
+    </footer>
+    <!-- <img src="img/footer.svg" alt="" class="footer-img"> -->
 
   </main>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
@@ -364,6 +387,11 @@
       scale: 1.2,
       easing: "cubic-bezier(.03,.98,.52,.99)",
     })
+
+    // Contact
+
+    var contactform = document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'gabriel.c.craveiro' + '@' + 'gmail' + '.' + 'com');
   </script>
 
 </body>
