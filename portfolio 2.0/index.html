@@ -84,7 +84,7 @@ maximum-scale=1.0, user-scalable=no" />
 
   <!-- Conteudo  -->
 
-  <div class="bcont">
+  <div id="barba-wrapper" class="bcont">
 
     <a href="javascript:" class="desaparecer" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
     <div class="tois">
@@ -101,22 +101,22 @@ maximum-scale=1.0, user-scalable=no" />
       <nav class="nav column is-12">
         <div class="nav-center nav-menu has-text-centered	">
           <a class="nav-item is-tab" href="#">Home</a>
-          <a class="nav-item is-tab" href="paginas/blog.html">Profile</a>
-          <a class="nav-item is-tab" href="paginas/contato.html">Work</a>
-          <a class="nav-item is-tab" href="paginas/contato.html">Contact</a>
+          <a class="nav-item is-tab" href="paginas/blog.html">Perfil</a>
+          <a class="nav-item is-tab" href="paginas/contato.html">Portfolio</a>
+          <a class="nav-item is-tab" href="paginas/contato.html">Contato</a>
         </div>
       </nav>
     </div>
 
     <!-- Header  -->
 
-    <div class="columns">
+    <div class="columns barba-container">
       <header class="column">
 
         <!-- TITLE  -->
 
         <h2>
-          <span class="title-h">
+          <span class="title-h" data-aos="fade-in" data-aos-duration='2000'>
           Oi! Meu nome é <span class='title-h-nm'>Gabriel Craveiro</span>
           <br> um Desenvolvedor de Santos.
           </span>
@@ -260,7 +260,9 @@ maximum-scale=1.0, user-scalable=no" />
             <div class="box port-cont" data-aos="zoom-in" data-aos-duration="1000">
               <div class="column port-item">
                 <figure class='ativa'>
+                  <a href="paginas/caseApollo.html">
                   <img style="width: 416px; height: 216px; margin-top: 0" src="assets/img/thumbnails/thumbSDA2.jpg" alt="">
+                </a>
                 </figure>
               </div>
               <div class="figure-bottom">
@@ -691,6 +693,9 @@ maximum-scale=1.0, user-scalable=no" />
       });
     </script>
 
+    <!-- Barba.js 1.0  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
 
     <!-- AOS  -->
 
@@ -700,6 +705,8 @@ maximum-scale=1.0, user-scalable=no" />
 
     <script>
       AOS.init();
+
+      Barba.Pjax.start();
     </script>
 
     <script>
