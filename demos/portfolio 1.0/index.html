@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- 
+    Author: Gabriel Craveiro
+    Date: 2017
+    Contact: gabriel.c.craveiro@gmail.com
+    Tema feito do 0, depois de muita diversão e mudanças 
+-->
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gabriel Craveiro - Desenvolvedor Web de Santos-SP - Portfolio</title>
+  <!-- Info site -->
+  <!-- Autor -->
+  <meta name=description content="Desenvolvedor Front-End e Web de Santos-SP.Aluno do curso de Sistemas para Internet da FATEC-RL, sou um programador com uma inclinação por programação funcional, interfaces limpas e design gráfico. Bem vindos ao meu Portfolio">
+  <meta name=author content="Gabriel Craveiro">
+  <meta name="reply-to" content="gabriel.c.craveiro@gmail.com" />
+  <!-- Google Robots -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.gabrielcraveiro.github.io/" />
+  <meta name="theme-color" content="#fff">
+  <!-- Fav -->
+  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+  <!-- Cards Redes Sociais -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gabriel Craveiro - Desenvolvedor Web de Santos-SP - Portfolio" />
+  <meta property="og:description" content="Desenvolvedor Front-End e Web de Santos-SP" />
+  <meta property="og:url" content="https://www.gabrielcraveiro.github.io/" />
+  <meta property="og:site_name" content="Desenvolvedor Front-End e Web de Santos-SP.Criação de layouts responsivos, mobile-first e também desenvolvimento em javascript. Portfolio"
+  />
+
+  <link rel="stylesheet" href="css/estilo.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" type="text/css">
+
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-99241400-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- 
+  
+  TODO: 
+  Fix Coala svg
+  Fix footer
+
+-->
+
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="nav is-fixed-top">
+    <div class="container">
+      <div class="nav-center nav-menu has-text-centered	">
+        <a class="nav-item is-tab" href="#">Home</a>
+        <!--<a class="nav-item is-tab" target="_blank" href="https://github.com/gabrielcraveiro/">Github</a>-->
+        <a class="nav-item is-tab" href="paginas/resume.html">Currículo</a>
+        <a class="nav-item is-tab" href="paginas/blog.html">Blog</a>
+        <a class="nav-item is-tab" href="paginas/contato.html">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Body -->
+  <section class="columns">
+    <main class="column projetos posts">
+      <div itemscope itemprop="author" itemtype="http://schema.org/Person">
+        <h1 class="posts--logo">
+          <link itemprop="url" href="https://gabrielcraveiro.github.io/" rel="author" />
+          <span itemprop="name" style="display:block;">Gabriel Craveiro</span></h1>
+        <p class="has-text-centered" style="color: #777"><span itemprop="jobtitle">Desenvolvedor Web</span> - <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> <span itemprop="addressLocality">Santos</span></span>
+        </p>
+        <div class="yinyang"></div>
+        <br>
+        <div>
+          <br>
+          <p class="descricao">
+            <meta itemprop="description" content="Aluno de Sistemas para Internet da FATEC em Santos, sou um programador com uma inclinação por programação funcional, interfaces limpas e design gráfico. No meu tempo livre costumo passar publicando projetos no meu Github, lendo livros ou publicando no meu Twitter. "> Aluno de Sistemas para Internet da FATEC em Santos, sou um programador com uma inclinação por programação funcional,
+            interfaces limpas e design gráfico. Além do meu portfólio, você pode conferir meus projetos no meu <a href="https://github.com/gabrielcraveiro/">Github</a>,
+            ou publicações no meu
+            <a href="paginas/blog.html">Blog</a>.
+          </p>
+        </div>
+
+        <br>
+        <div>
+          <button class="reset reset--active icon--grid">
+          <img src="img/icons/icon-grid.svg" alt="" class="icon--homepage">
+          </button>
+          <button class="reset icon--text">
+          <img src="img/icons/icon-aA.svg" alt="" class="icon--homepage">
+          </button>
+        </div>
+        <br>
+        <div class="has-text-centered centered grid">
+          <div class="hidden--text has-text-left" style="padding: 0!important">
+            <p><span class="text--hover">Apollo UX</span>
+              <br>[ Coletivo de desenvolvedores / Agência em Santos]
+              <br><a style="transition: none" href="paginas/cases/projetos_apollo.html">[ Case ]</a>
+            </p>
+            <a href="paginas/cases/projetos_apollo.html"><img class="projeto--img" src="img/thumbnails/apolloThumb.svg" alt="Logo do projeto Apollo"></a>
+          </div>
+          <div class="hidden--text has-text-left">
+            <p><span class="text--hover">FormSlicer.js</span>
+              <br>[ Biblioteca Vanilla JS / NPM Package ]
+              <br><a style="transition: none" href="https://apollo-ux.github.io/FormSlicer/src/" target="_blank">[ Github ]</a>
+            </p>
+            <a href="https://apollo-ux.github.io/FormSlicer/src/" target="_blank"><img style="" class="projeto--img js" src="img/thumbnails/fsThumb.svg" alt="Logo do projeto JS"></a>
+          </div>
+          <div class="hidden--text has-text-left">
+            <p><span class="text--hover">Ozeni Lima</span> <br> [ Wordpress / Blog ]
+              <br><a style="transition: none" href="paginas/cases/projetos_ozeni.html">[ Case ]</a>
+            </p>
+            <a href="paginas/cases/projetos_ozeni.html"><img class="projeto--img logo" src="img/thumbnails/ozeniThumb.svg" alt="Logo do projeto Ozeni Lima"></a>
+          </div>
+          <div class="hidden--text has-text-left">
+            <p><span class="text--hover">WR Marine Service</span> <br> [ Logo / Site / Identidade Visual ]
+              <br><a style="transition: none" href="paginas/cases/projetos_wr.html">[ Case ]</a>
+            </p>
+            <a href="paginas/cases/projetos_wr.html"><img style="" class="projeto--img web logo" src="img/thumbnails/wrThumb.svg" alt="Logo do projeto Wr Marine"></a>
+          </div>
+          <div class="hidden--text has-text-left">
+            <p><span class="text--hover">Coala Doces</span> <br> [ Logo / Identidade Visual ]
+              <br>Projeto Faculdade
+              <br><a style="transition: none" href="paginas/cases/projetos_coala.html">[ Case ]</a>
+            </p>
+            <a href="paginas/cases/projetos_coala.html"><img class="projeto--img logo" src="img/thumbnails/coalaThumb.svg" alt="Logo do projeto Coala Doces"></a>
+          </div>
+        </div>
+        <ul class="posts--blog text" style="margin-left: 0">
+
+          <p class="" style="color: #555; font-size: 1.5rem; font-style: 'Fira Sans';font-weight: 500;margin-bottom: 15px">Projetos</p>
+          <li><a href="paginas/cases/projetos_apollo.html">Apollo UX - Coletivo de desenvolvedores em Santos</a>
+            <br> <em class="posts--data">Maio de 2017</em></li>
+          <li><a href="https://apollo-ux.github.io/FormSlicer/src/" target="_blank">FormSlicer.js - Biblioteca para forms multi-paginas</a>
+            <br> <em class="posts--data">Maio de 2017</em></li>
+          <li><a href="paginas/cases/projetos_ozeni.html">Ozeni Lima - Escritora de Auto-Ajuda com livros no Brasil e Portugal</a>
+            <br> <em class="posts--data">abril de 2017</em></li>
+          <li><a href="paginas/cases/projetos_wr.html">WR Marine Service - Empresa carioca de estivagem de cargas</a>
+            <br> <em class="posts--data">novembro de 2016</em></li>
+          <li><a href="paginas/cases/projetos_coala.html">Coala Doces - Conceito de Doceria</a>
+            <br> <em class="posts--data">julho 2016</em></li>
+          <br>
+          <p class="" style="color: #777">Meu blog</p>
+          <li>
+            <a href="https://medium.com/@gabrielcraveiro/como-usar-o-prepros-para-compilar-automaticamente-arquivos-scss-99f073a98cef">Como usar o prepros para compilar automaticamente arquivos .SCSS</a>
+          </li>
+          <em class="posts--data">13 Maio 2017</em>
+          <li>
+            <a href="https://medium.com/@gabrielcraveiro/visual-studio-code-o-editor-que-veio-para-conquistar-fcac9365ef00">Visual Studio Code, o editor que você não achava que iria precisar</a>
+          </li>
+          <em class="posts--data">13 Maio 2017</em>
+        </ul>
+      </div>
+      <br>
+      <div class="has-text-center">
+        <ul class="footer--social">
+          <li><a href="https://www.github.com/gabrielcraveiro" target="_Blank" title="Github"><img src="img/icons/github.svg"></a></li>
+          <li><a href="https://www.behance.net/gabrielcraveiro" target="_Blank" title="Behance"><img src="img/icons/behance.svg"></a></li>
+          <li><a href="https://linkedin.com/in/gabriel-craveiro-83b2b8112/" target="_Blank" title="Linkedin"><img src="img/icons/linkedin.svg"></a></li>
+          <li><a href="https://twitter.com/meiasestileiras" target="_Blank" title="Twitter"><img src="img/icons/twitter.svg"></a></li>
+          <li><a href="mailto:gabriel.c.craveiro@gmail.com" target="_Blank" title="Email"><img src="img/icons/mail.svg"></a></li>
+        </ul>
+      </div>
+      <footer>
+        <ul class="paginas--footer">
+          <li>Gabriel Craveiro - 2017</li>
+        </ul>
+      </footer>
+    </main>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="">
+
+
+<!-- 
+  
+  ¯\_(⊙︿⊙)_/¯
+
+  Author: Gabriel Craveiro
+  Date: 2017
+  Contact: gabriel.c.craveiro@gmail.com
+
+  Você caiu na minha carta armadilha! Brincadeiras a parte, depois de muitos
+  cliques você acabou caindo no meu cantinho virtual. Muitas coisas acontecem
+  por trás do site, então vou tentar facilitar a sua vida um pouquinho.
+
+  ( •_•)
+  ( •_•)>⌐■-■
+  (⌐■_■)
+
+  1. Você usou alguma framework como angular ou react para criar esse site?
+  -  Não! Tudo é html/css/js com algumas bibliotecas que liberam certas interações e efeitos!
+
+  2. Como você fez para o texto brilhar como se ele fosse muito brilhoso?
+  -  Usei text shadow! uma propriedade css que habilita sombras nos textos, você pode customizar a direção e cor!
+
+  3. E as particulas no fundo?
+  -  Eu usei a animação de um rapaz chamado Saransh Sinha do codepen!
+
+  4. Sobre o css e html, como você organizou?
+  -  Eu fiz tudo usando scss, onde eu tinha um arquivo css principal que importava funções de um var.scss e mediaquery.css, eu fiz tudo utilizando Bulma, uma framework estilo Boostrap, que permite a utilização de grids e alguns componentes!
+
+  5. E se eu quiser saber mais alguma coisa??? 
+  -  Me mande uma mensagem!! Você pode ver minhas formas de contato no fim da página ou do lado se você estiver no desktop! E fique a vontade para fuçar minha página também!
+
+  Obrigado por visitar! (づ￣ ³￣)づ
+
+  Gabriel Craveiro
+
+-->
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gabriel Craveiro - Case Shopping das Aguas</title>
+  <!-- Info site -->
+  <!-- Autor -->
+  <meta name=description content="Desenvolvedor Front-End e Web de Santos-SP.Aluno do curso de Sistemas para Internet da FATEC-RL, sou um programador com uma inclinação por programação funcional, interfaces limpas e design gráfico. Bem vindos ao meu Portfolio">
+  <meta name=author content="Gabriel Craveiro">
+  <meta name="reply-to" content="gabriel.c.craveiro@gmail.com" />
+  <!-- Google Robots -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.gabrielcraveiro.github.io/" />
+  <meta name="theme-color" content="#fff">
+  <!-- Fav -->
+  <!-- <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon"> -->
+  <!-- Cards Redes Sociais -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gabriel Craveiro - Desenvolvedor Web de Santos-SP - Portfolio" />
+  <meta property="og:description" content="Desenvolvedor Front-End e Web de Santos-SP" />
+  <meta property="og:url" content="https://www.gabrielcraveiro.github.io/" />
+  <meta property="og:site_name" content="Desenvolvedor Front-End e Web de Santos-SP.Criação de layouts responsivos, mobile-first e também desenvolvimento em javascript. Portfolio"
+  />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" type="text/css">
+  <link rel="stylesheet" href="../css/case.css" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+  <!-- Estrelas  -->
+
+  <div id='stars1'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+
+
+  <!-- Conteudo  -->
+
+  <div class="bcont">
+
+    <!-- Scroll lateral  -->
+
+    <a href="javascript:" class="desaparecer" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+    <div class="tois">
+      <div class="desaparecer icones-lado">
+        <i class="fa fa-github"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-envelope"></i>
+      </div>
+    </div>
+
+    <!-- Nav -->
+
+    <div class="columns">
+      <nav class="nav column is-12">
+        <div class="nav-center nav-menu has-text-centered	">
+          <a class="nav-item is-tab" href="../index.html">Home</a>
+          <a class="nav-item is-tab" href="../index.html#perfil">Perfil</a>
+          <a class="nav-item is-tab" href="../index.html#portfolio">Portfolio</a>
+          <a class="nav-item is-tab" href="../index.html#contato">Contato</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="columns">
+      <header class="column">
+
+        <!-- TITLE  -->
+
+
+        <div class="term card-projeto has-text-centered">
+          <div class="aba-topo">
+            <div class="botoes-header verde"></div>
+            <div class="botoes-header vermelho"></div>
+            <div class="botoes-header amarelo"></div>
+            <div>  projeto.pdf</div>
+            <a style="position: absolute; right: 0; margin-right: 10px" class="delete"></a>
+          </div>
+
+          <div class="">
+
+            <article data-aos="fade-in" class="infoTerminal projetos-info">
+              <h1 class="sc-5">Shopping das Aguas</h1>
+              <div data-aos="fade-in" class="info-apresentacao">
+                <h3>Uma distribuidora da cidade de São Vicente</h3>
+                <p>Criar um site de catálogo para produtos, que pudessem mostrar o inventário da loja e também promoções ocasionais.
+                  Foi escolhido o Wordpress para a plataforma de desenvolvimento que foi realizada junto com <a href="https://github.com/ihfernando">Fernando Moreira</a>                  e <a href="">Alexandre do Vale</a>
+                </p>
+                <div class="div-img">
+                  <img src="../assets/img/cases/sda01.gif" alt="">
+                </div>
+              </div>
+              <div data-aos="fade-in" class="info-tipografia">
+                <h3>Tipografia</h3>
+                <p>Open Sans & Bold - Titulos
+                </p>
+                <div class="div-img">
+                  <img src="../assets/img/cases/typo_ops.svg" alt="">
+                </div>
+                <p>Roboto & Regular - Textos
+                </p>
+                <div class="div-img">
+                  <img src="../assets/img/cases/typo_roboto.svg" alt="">
+                </div>
+              </div>
+              <div data-aos="fade-in" class="info-cores">
+                <h3>Cores</h3>
+                <p>Utilizei tons azuis a pedido do cliente, e acabei criando uma paleta com quatro cores principais. </p>
+                <div class="box box-sda">
+                  <ul>
+                    <li><span class="cor-subtitle"><span class="cor-hashtag" style=''>#</span>FFFFFF</span>
+                    </li>
+                    <li><span class="cor-subtitle"><span class="cor-hashtag" style=''>#</span>3E4095</span>
+                    </li>
+                    <li><span class="cor-subtitle"><span class="cor-hashtag" style=''>#</span>333333</span>
+                    </li>
+                    <li><span class="cor-subtitle"><span class="cor-hashtag" style=''>#</span>5387C5</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div data-aos="fade-in" class="info-projeto">
+                <h3>Meu trabalho</h3>
+                <p>Realizei a pesquisa de temas e acabei identificando o tema Porto como o mais ideal para o projeto, realizei
+                  a produção do mockup e criação da página de homes e produto. Desenvolvi também um manual de cores para
+                  futuros projetos da marca.
+                  <br>
+                  <br> Aprendi também a utilizar plugins de catálogo e woocommerce e alteração de estruturas de php do wordpress
+                  usando por exemplo o ftp.
+                </p>
+                <img src="../assets/img/cases/sda02.png" alt="">
+                <img src="../assets/img/cases/sda03.png" alt="">
+              </div>
+              <div data-aos="fade-in" class="info-projeto">
+
+                <h3>Tecnologias & aprendizados</h3>
+
+                <br>
+                <div class="tags has-addons">
+                  <span class="tag is-danger is-medium">Web Design</span>
+                  <span class="tag is-danger is-medium">UX Design</span>
+                  <span class="tag is-danger is-medium">Desenvolvimento Web</span>
+                  <span class="tag is-danger is-medium">Wordpress</span>
+                  <span class="tag is-danger is-medium">Woocommerce</span>
+                  <span class="tag is-danger is-medium">Catalog WP</span>
+                  <span class="tag is-danger is-medium">FTP</span>
+                  <span class="tag is-danger is-medium">Contato com Clientes</span>
+                  <span class="tag is-danger is-medium">Desenvolvimento em Equipe <span>
+                  </div>
+                  <p>É interessante a diferença de desenvolvimento de sites estáticos para algo usando um cms como o wordpress. E é interessante também o fato de tudo ter documentação, o que você precisa você acaba encontrando em algum lugar, de alguma pessoa que precisou de algo parecido e você consegue a partir daí adaptar a resolução para você.
+                  </p>
+                </div>
+                <div data-aos="fade-in" class="info-projeto">
+                  <p>Foi também meu primeiro grande trabalho envolvendo prazos e contratos, terminando com uma grande sensação de trabalho feito e principalmente no prazo.
+                    <br>
+                  </p>
+                  <img src="../assets/img/cases/sda04.png" alt="">
+                </div>
+                <div class="whitespace"></div>
+                <div class="div-botao has-text-centered">
+                  <span class="emoji-case"></span>
+                  <br>
+                  <br>
+                  <a href="http://www.shoppingdasaguas.com.br/" target="_blank" class="button is-medium is-outlined">
+                  <span>Visitar Site</span>
+                  </a>
+                </div>
+                <div class="whitespace"></div>
+            </article>
+
+      </header>
+      </div>
+
+      <div class="next-project">
+        <div class="has-text-centered">
+          <p>Proximo Projeto</p>
+          <h2 class="sc-2 prox"><a href="caseApollo.html">Apollo UX</a></h2>
+        </div>
+      </div>
+
+
+      <!-- Footer  -->
+
+      <footer>
+        <div class="columns">
+          <div class="column has-text-center ">
+            <ul>
+              <li><a href="mailto:gabriel.c.craveiro@gmail.com" target="_Blank" title="Email"><i class="fa fa-envelope" aria-hidden='true'></i></a></li>
+              <li><a href="https://www.github.com/gabrielcraveiro" target="_Blank" title="GitHub"><i class="fa fa-github" aria-hidden='true'></i></a></li>
+              <li><a href="https://linkedin.com/in/gabriel-craveiro-83b2b8112/" target="_Blank" title="Linkedin"><i class="fa fa-linkedin" aria-hidden='true'></i></a></li>
+              <li><a href="https://twitter.com/meiasestileiras" target="_Blank" title="Twitter"><i class="fa fa-twitter" aria-hidden='true'></i></a></li>
+            </ul>
+            Designed and developed by <br> Gabriel Craveiro - 2017
+          </div>
+        </div>
+      </footer>
+      </div>
+
+      <!-- BULMA  -->
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+      <script>
+        $(".aba div").on('click', function () {
+          if ($('aba-resume').hasClass('aba-ativa')) {
+            $('.aba-resume').toggleClass('aba-ativa').toggleClass('aba-inativa');
+            $('.aba-person').toggleClass('aba-ativa').toggleClass('aba-inativa');
+            $('.terminal-personjs').toggle();
+            $('.terminal-resume').toggle();
+          } else {
+            $('.aba-person').toggleClass('aba-ativa').toggleClass('aba-inativa');
+            $('.aba-resume').toggleClass('aba-ativa').toggleClass('aba-inativa');
+            $('.terminal-resume').toggle();
+            $('.terminal-personjs').toggle();
+          }
+        });
+      </script>
+
+
+      <!-- AOS  -->
+
+      <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init();
+      </script>
+
+      <script>
+        (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-99241400-1', 'auto');
+        ga('send', 'pageview');
+
+        // ===== Scroll to Top ==== 
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+            $('.desaparecer').fadeIn(500); // Fade in the arrow
+          } else {
+            $('.desaparecer').fadeOut(500); // Else fade out the arrow
+          }
+        });
+        $('#return-to-top').click(function () { // When arrow is clicked
+          $('body,html').animate({
+            scrollTop: 0 // Scroll to top of body
+          }, 300);
+        });
+      </script>
+
+
+</body>
+
+</html>
