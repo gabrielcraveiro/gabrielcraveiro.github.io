@@ -3,10 +3,40 @@
 
 
 <!-- 
-    Author: Gabriel Craveiro
-    Date: 2017
-    Contact: gabriel.c.craveiro@gmail.com
-    Tema feito do 0, depois de muita diversão e mudanças 
+  
+  ¯\_(⊙︿⊙)_/¯
+
+  Author: Gabriel Craveiro
+  Date: 2017
+  Contact: gabriel.c.craveiro@gmail.com
+
+  Você caiu na minha carta armadilha! Brincadeiras a parte, depois de muitos
+  cliques você acabou caindo no meu cantinho virtual. Muitas coisas acontecem
+  por trás do site, então vou tentar facilitar a sua vida um pouquinho.
+
+  ( •_•)
+  ( •_•)>⌐■-■
+  (⌐■_■)
+
+  1. Você usou alguma framework como angular ou react para criar esse site?
+  -  Não! Tudo é html/css/js com algumas bibliotecas que liberam certas interações e efeitos!
+
+  2. Como você fez para o texto brilhar como se ele fosse muito brilhoso?
+  -  Usei text shadow! uma propriedade css que habilita sombras nos textos, você pode customizar a direção e cor!
+
+  3. E as particulas no fundo?
+  -  Eu usei a animação de um rapaz chamado Saransh Sinha do codepen!
+
+  4. Sobre o css e html, como você organizou?
+  -  Eu fiz tudo usando scss, onde eu tinha um arquivo css principal que importava funções de um var.scss e mediaquery.css, eu fiz tudo utilizando Bulma, uma framework estilo Boostrap, que permite a utilização de grids e alguns componentes!
+
+  5. E se eu quiser saber mais alguma coisa??? 
+  -  Me mande uma mensagem!! Você pode ver minhas formas de contato no fim da página ou do lado se você estiver no desktop! E fique a vontade para fuçar minha página também!
+
+  Obrigado por visitar! (づ￣ ³￣)づ
+
+  Gabriel Craveiro
+
 -->
 
 <head>
@@ -26,7 +56,7 @@
   <meta name="theme-color" content="#fff">
   <!-- Fav -->
   <!-- <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon"> -->
+      <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon"> -->
   <!-- Cards Redes Sociais -->
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
@@ -41,38 +71,53 @@
 
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  
+
 
 </head>
 
 <body>
 
-  <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+
+  <!-- Estrelas  -->
 
   <div id='stars1'></div>
   <div id='stars2'></div>
   <div id='stars3'></div>
-  <bcont>
+
+
+  <!-- Conteudo  -->
+
+  <div class="bcont">
+
+    <!-- Scroll lateral  -->
+
+    <a href="javascript:" class="desaparecer" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+    <div class="tois">
+      <div class="desaparecer icones-lado">
+        <i class="fa fa-github"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-envelope"></i>
+      </div>
+    </div>
+
+    <!-- Nav -->
+
     <div class="columns">
       <nav class="nav column is-12">
-        <div class="container">
-          <div class="nav-center nav-menu has-text-centered	">
-            <a class="nav-item is-tab" href="#">ABOUT</a>
-            <a class="nav-item is-tab" href="paginas/blog.html">PORTFOLIO</a>
-            <a class="nav-item is-tab" href="paginas/contato.html">BLOG</a>
-            <a class="nav-item is-tab" href="paginas/contato.html">CONTACT</a>
-          </div>
+        <div class="nav-center nav-menu has-text-centered	">
+          <a class="nav-item is-tab" href="#">Home</a>
+          <a class="nav-item is-tab" href="paginas/blog.html">Profile</a>
+          <a class="nav-item is-tab" href="paginas/contato.html">Work</a>
+          <a class="nav-item is-tab" href="paginas/contato.html">Contact</a>
         </div>
       </nav>
-
     </div>
+
     <div class="columns">
       <header class="column">
 
         <!-- TITLE  -->
 
-        <h1>Gabriel Craveiro</h1>
-        <h2 class="title-h2 linha-h2">Apollo UX</h2>
 
         <div class="term card-projeto has-text-centered">
           <div class="aba-topo">
@@ -85,8 +130,9 @@
 
           <div class="">
 
-            <article class="infoTerminal projetos-info">
-              <div class="info-apresentacao">
+            <article data-aos="fade-in" class="infoTerminal projetos-info">
+              <h1 class="sc-5">Apollo UX</h1>
+              <div data-aos="fade-in" class="info-apresentacao">
                 <h3>Um coletivo de desenvolvedores</h3>
                 <p>Criar um coletivo entre amigos que pudessem realizar projetos de criação de soluções para marcas na web.
                   Juntamos algumas ideias, juntamos colegas que possuiam especializações diferentes e criamos a Apollo.
@@ -95,7 +141,7 @@
                   <img src="../assets/img/cases/apolloxgif2.gif" alt="">
                 </div>
               </div>
-              <div class="info-tipografia">
+              <div data-aos="fade-in" class="info-tipografia">
                 <h3>Tipografia</h3>
                 <p>Lato & Bold - Titulos
                 </p>
@@ -108,7 +154,7 @@
                   <img src="../assets/img/cases/typo_qs.svg" alt="">
                 </div>
               </div>
-              <div class="info-cores">
+              <div data-aos="fade-in" class="info-cores">
                 <h3>Cores</h3>
                 <p>Tivemos como inspiração o deus grego Apolo, patrono da arte, música e do fogo. </p>
                 <div class="box">
@@ -122,7 +168,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="info-projeto">
+              <div data-aos="fade-in" class="info-projeto">
                 <h3>Meu trabalho</h3>
                 <p>Realizei a criação do logo, identidade e cartão. O mockup do site fiz junto com <a href="ihfernando.github.io">Fernando Moreira</a>.
                   Também auxiliei no desenvolvimento do site, realizando principalmente na criação da área de Quem somos
@@ -130,7 +176,7 @@
                 </p>
                 <img src="../assets/img/cases/a5.png" alt="">
               </div>
-              <div class="info-projeto">
+              <div data-aos="fade-in" class="info-projeto">
 
                 <h3>Tecnologias & aprendizados</h3>
 
@@ -152,7 +198,7 @@
                   <p>É interessante que mesmo você tendo utilizado várias vezes certa tecnologia, ao ficar alguns meses sem usar você acaba perdendo a prática, ao criar a Apollo acabei redescobrindo práticas e aprendendo novas, principalmente na criação de itens impressos e desenvolvimento com bootstrap 4.
                   </p>
                 </div>
-                <div class="info-projeto">
+                <div data-aos="fade-in" class="info-projeto">
                   <p>A maioria dos integrantes era novo na área mas possuia vontade de fazer algo fora da faculdade que pudesse
                     acrescentar nas nossas experiências. Apesar de ja termos feito projetos separados, organizar, projetar,
                     definir metas era algo novo para os integrantes da equipe. Saber dividir as tarefas se tornou o principal
@@ -163,90 +209,108 @@
                 </div>
                 <div class="whitespace"></div>
                 <div class="div-botao has-text-centered">
-                  <a class="button is-medium">
+                  <a class="button is-medium is-outlined is-danger">
                   <span>Visitar Site</span>
                   </a>
                 </div>
                 <div class="whitespace"></div>
             </article>
 
-          </header>
-        </div>
-        
-        <div class="next-project">
-          <div class="has-text-centered">
-            <p>Próximo projeto</p>
-            <p class="prox"><a href="">SHOPPING DAS AGUAS</a></p>
-          </div>
-        </div>
+      </header>
+      </div>
+
+      <div class="next-project">
+        <div class="has-text-centered">
+          <p>Proximo Projeto</p>
+          <h2 class="sc-2 prox"><a href="">SHOPPING DAS AGUAS</a></h2>
+          
         </div>
       </div>
+
+
       <!-- Footer  -->
 
       <footer>
         <div class="columns">
           <div class="column has-text-center ">
             <ul>
-              <li><a href="https://www.github.com/gabrielcraveiro" target="_Blank" title="GitHub"><img src="assets/img/icons/github.svg"></a></li>
-              <li><a href="https://linkedin.com/in/gabriel-craveiro-83b2b8112/" target="_Blank" title="Linkedin"><img src="assets/img/icons/linkedin.svg"></a></li>
-              <li><a href="https://twitter.com/meiasestileiras" target="_Blank" title="Twitter"><img src="assets/img/icons/twitter.svg"></a></li>
-              <li><a href="mailto:gabriel.c.craveiro@gmail.com" target="_Blank" title="Email"><img src="assets/img/icons/mail.svg"></a></li>
+              <li><a href="mailto:gabriel.c.craveiro@gmail.com" target="_Blank" title="Email"><i class="fa fa-envelope" aria-hidden='true'></i></a></li>
+              <li><a href="https://www.github.com/gabrielcraveiro" target="_Blank" title="GitHub"><i class="fa fa-github" aria-hidden='true'></i></a></li>
+              <li><a href="https://linkedin.com/in/gabriel-craveiro-83b2b8112/" target="_Blank" title="Linkedin"><i class="fa fa-linkedin" aria-hidden='true'></i></a></li>
+              <li><a href="https://twitter.com/meiasestileiras" target="_Blank" title="Twitter"><i class="fa fa-twitter" aria-hidden='true'></i></a></li>
             </ul>
             Designed and developed by <br> Gabriel Craveiro - 2017
           </div>
         </div>
       </footer>
-  </bcont>
+      </div>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+      <!-- BULMA  -->
 
-  <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 
-  <script>
-    const tilt = $('.js-tilt').tilt();
-
-    $('.js-tilt').tilt({
-      maxTilt: 20,
-      perspective: 1000,
-      scale: 1.3
-    })
-
-    // ===== Scroll to Top ==== 
-
-    $(window).scroll(function () {
-      if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200); // Fade in the arrow
-      } else {
-        $('#return-to-top').fadeOut(200); // Else fade out the arrow
-      }
-    });
-    $('#return-to-top').click(function () { // When arrow is clicked
-      $('body,html').animate({
-        scrollTop: 0 // Scroll to top of body
-      }, 500);
-    });
-  </script>
+      <script>
+        $(".aba div").on('click', function () {
+          if ($('aba-resume').hasClass('aba-ativa')) {
+            $('.aba-resume').toggleClass('aba-ativa').toggleClass('aba-inativa');
+            $('.aba-person').toggleClass('aba-ativa').toggleClass('aba-inativa');
+            $('.terminal-personjs').toggle();
+            $('.terminal-resume').toggle();
+          } else {
+            $('.aba-person').toggleClass('aba-ativa').toggleClass('aba-inativa');
+            $('.aba-resume').toggleClass('aba-ativa').toggleClass('aba-inativa');
+            $('.terminal-resume').toggle();
+            $('.terminal-personjs').toggle();
+          }
+        });
+      </script>
 
 
+      <!-- AOS  -->
 
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-    ga('create', 'UA-99241400-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init();
+      </script>
+
+      <script>
+        (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-99241400-1', 'auto');
+        ga('send', 'pageview');
+
+        // ===== Scroll to Top ==== 
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+            $('.desaparecer').fadeIn(500); // Fade in the arrow
+          } else {
+            $('.desaparecer').fadeOut(500); // Else fade out the arrow
+          }
+        });
+        $('#return-to-top').click(function () { // When arrow is clicked
+          $('body,html').animate({
+            scrollTop: 0 // Scroll to top of body
+          }, 300);
+        });
+      </script>
+
+
 </body>
 
 </html>
