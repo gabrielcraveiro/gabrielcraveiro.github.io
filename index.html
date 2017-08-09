@@ -113,7 +113,7 @@ maximum-scale=1.0, user-scalable=no" />
     <div class="columns">
       <header class="column">
 
-        <!-- TITLE  -->
+        <!-- Titulo  -->
 
         <h2>
           <span class="title-h" data-aos="fade-in" data-aos-duration='2000'>
@@ -129,21 +129,23 @@ maximum-scale=1.0, user-scalable=no" />
         <br>
         <br>
 
-        <!-- TERMINAL  -->
+        <!-- Terminal  -->
 
         <div class="term" id="perfil" data-aos="fade-in" data-aos-duration='2000'>
           <div class="aba-topo">
             <div class="botoes-header verde"></div>
             <div class="botoes-header vermelho"></div>
             <div class="botoes-header amarelo"></div>
-            <a style="position: absolute; right: 0; margin-right: 10px" class="delete"></a>
+            <span style="position: absolute; right: 0; margin-right: 10px" tooltip="Enfeite :p" flow="down">
+                <a class="delete"></a>
+            </span>
           </div>
           <div class="aba">
             <div class="aba-person aba-ativa">person.js</div>
             <div class="aba-resume aba-inativa">resume</div>
           </div>
 
-          <!-- Person.JS  -->
+          <!-- Perfil -->
 
           <div class="terminal-personjs">
             <div class="infoTerminal">
@@ -186,7 +188,7 @@ maximum-scale=1.0, user-scalable=no" />
             </div>
           </div>
 
-          <!-- Resume JS  -->
+          <!-- Resume  -->
 
           <div class="terminal-resume">
             <h2 style="font-family: Quicksand">Gabriel Craveiro</h2>
@@ -227,12 +229,13 @@ maximum-scale=1.0, user-scalable=no" />
               <span style="float:right!important">01/2016-12/2018</span>
             </p>
           </div>
-          <!-- /TERMINAL  -->
+          <!-- /Terminal  -->
         </div>
-        <!-- /HEADER  -->
+        <!-- /Header  -->
       </header>
     </div>
-    <!-- PORTFOLIO  -->
+
+    <!-- Portfolio  -->
 
     <section class="portfolio" id="portfolio">
 
@@ -249,7 +252,7 @@ maximum-scale=1.0, user-scalable=no" />
         </div>
       </div>
 
-      <!-- PROJECTS  -->
+      <!-- Projetos  -->
 
       <div class="columns" style="margin: auto">
         <div class="port-container column">
@@ -441,7 +444,7 @@ maximum-scale=1.0, user-scalable=no" />
             <div class="box port-cont-study" data-aos="zoom-in" data-aos-duration="1000">
               <div class="column port-item">
                 <figure class='ativa'>
-                  <a target="_blank" href="https://gabrielcraveiro.github.io/Pokemon-Team-Creator/index.html">                  <img src="assets/img/thumbnails/thumbPOKE.png" alt="">
+                  <a target="_blank" href="https://gabrielcraveiro.github.io/Pokemon-Team-Creator/index.html"><img src="assets/img/thumbnails/thumbPOKE.png" alt="">
                   </a>
                 </figure>
               </div>
@@ -663,12 +666,14 @@ maximum-scale=1.0, user-scalable=no" />
 
     <section class="contato" id="contato">
       <div class="columns is-centered">
-        <div class="column is-4">
+        <div class="column is-4 term-contato">
           <br>
-          <p>Fique a vontade para me mandar uma mensagem sobre trabalhos ou projetos, ou até mesmo um oi !
+          <p>Fique a vontade para me mandar uma mensagem sobre trabalhos ou projetos, ou até mesmo um oi <span class="emoji-bye"><span>👋</span></span>
+            !
             <br>
             <br>Você pode entrar em contato usando o
-            <a href="https://www.linkedin.com/in/gabriel-craveiro-83b2b8112/" target="_blank">Linkedin</a>, ou me mandando um
+            <a href="https://www.linkedin.com/in/gabriel-craveiro-83b2b8112/" target="_blank">Linkedin</a>, ou me mandando
+            um
             <span tooltip="gabriel.c.craveiro@gmail.com" flow="down">
               <a href="mailto:gabriel.c.craveiro@gmail.com">Email!</a>
             </span>
@@ -692,14 +697,13 @@ maximum-scale=1.0, user-scalable=no" />
             <li><a href="https://linkedin.com/in/gabriel-craveiro-83b2b8112/" target="_Blank" title="Linkedin"><i class="fa fa-linkedin" aria-hidden='true'></i></a></li>
             <li><a href="https://twitter.com/meiasestileiras" target="_Blank" title="Twitter"><i class="fa fa-twitter" aria-hidden='true'></i></a></li>
           </ul>
-          <br>
-          Designed and developed by <br> Gabriel Craveiro - 2017
+          <br> Designed and developed by <br> Gabriel Craveiro - 2017
         </div>
       </div>
     </footer>
     </div>
 
-    <!-- BULMA  -->
+    <!-- Bulma  -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -729,9 +733,7 @@ maximum-scale=1.0, user-scalable=no" />
 
     <script>
       AOS.init();
-    </script>
 
-    <script>
       (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
@@ -750,15 +752,14 @@ maximum-scale=1.0, user-scalable=no" />
       // ===== Scroll to Top ==== 
 
       $(window).scroll(function () {
-        if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-          $('.desaparecer').fadeIn(500); // Fade in the arrow
-        } else {
-          $('.desaparecer').fadeOut(500); // Else fade out the arrow
+        if ($(this).scrollTop() >= 50) {
+          $('.desaparecer').fadeIn(500);
+          $('.desaparecer').fadeOut(500);
         }
       });
-      $('#return-to-top').click(function () { // When arrow is clicked
+      $('#return-to-top').click(function () {
         $('body,html').animate({
-          scrollTop: 0 // Scroll to top of body
+          scrollTop: 0
         }, 300);
       });
     </script>
