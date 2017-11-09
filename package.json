@@ -1,0 +1,26 @@
+{
+  "name": "gabrielcraveiro.github.io",
+  "version": "2.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcraveiro/gabrielcraveiro.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielcraveiro/gabrielcraveiro.github.io/issues"
+  },
+  "homepage": "https://github.com/gabrielcraveiro/gabrielcraveiro.github.io#readme"
+}
