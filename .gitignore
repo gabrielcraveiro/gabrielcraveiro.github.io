@@ -3,3 +3,4 @@
 prepros-6.config
 .vscode
 *.scss
+node_modules
