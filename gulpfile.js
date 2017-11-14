@@ -31,7 +31,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('uglify', function () {
-  gulp.src('./lib/*.js')
+  gulp.src('./js/*.js')
     .pipe(uglify('main.js'))
     .pipe(gulp.dest('./js'))
 });
