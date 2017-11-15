@@ -1,0 +1,23 @@
+// VARIÁVEIS E FUNÇÕES DO SASS
+// CORES
+$cor-1: #999;
+$cor-2: #6a6a6a;
+$cor-3: #333;
+$cor-4: #000;
+$cor-5: #BFD9DC;
+$cor-6: line-gradient($cor-5,$cor-2);
+$cor-7: #fff;
+
+// VALORES
+$var-1: 10px;
+$var-2: 6px;
+$var-3: 2vh;
+$var-4: 1%;
+// MIXINS
+
+@mixin line-gradient($cor1, $cor2) {
+  background: $cor1;
+  background: -webkit-linear-gradient(to bottom, $cor1 0%, $cor2 100%) !important;
+  background: -moz-linear-gradient(to bottom, $cor1 0%, $cor2 100%) !important;
+  background: linear-gradient(to right, $cor1 0%, $cor2 100%, transparent) !important;
+}
