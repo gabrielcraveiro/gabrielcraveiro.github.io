@@ -14,7 +14,8 @@ gulp.task('imagemin', function () {
       svgoPlugins: [{
         removeViewBox: false
       }],
-      use: [pngquant()]
+      use: [pngquant()],
+      verbose: true
     }))
     .pipe(gulp.dest('./assets/img/'));
 });
@@ -27,7 +28,8 @@ gulp.task('sass', function () {
     }).on('error', sass.logError))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./assets/css'));
+    .pipe(gulp.dest('./assets/css'))
+    .pipe(livereload());;
 });
 
 gulp.task('uglify', function () {
@@ -38,10 +40,10 @@ gulp.task('uglify', function () {
 
 gulp.task('watch', function () {
   livereload.listen();
-
   gulp.watch('./assets/scss/*.scss', ['sass']);
   gulp.watch('./assets/js/*.js', ['uglify']);
-  gulp.watch(['./assets/css/main.css', './assets/js/*.js'], function (files) {
+  gulp.watch('./assets/img/**/*', ['imagemin']);
+  gulp.watch(['./assets/css/main.css', './assets/js/*.js', '**/*.html', '*.html'], function (files) {
     livereload.changed(files)
   });
 });
