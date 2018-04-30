@@ -35,7 +35,7 @@ gulp.task('sass', function () {
 gulp.task('uglify', function () {
   gulp.src('./assets/js/*.js')
     .pipe(uglify('main.js'))
-    .pipe(gulp.dest('.assets/js'))
+    .pipe(gulp.dest('./assets/js'))
 });
 
 gulp.task('watch', function () {
